@@ -2,3 +2,19 @@
 	background: #e4e5e6;
 	height: 100px;
 }
+
+.work-together {
+	margin-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+	.work-together {
+		margin-bottom: 124px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.work-together {
+		margin-bottom: 164px;
+	}
+}

@@ -1,4 +1,16 @@
 /* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+@font-face {
+	font-family: 'Impact';
+	src: url('./fonts/impact.woff2') format('woff2'),
+		url('./fonts/impact.woff') format('woff'),
+		url('./fonts/impact.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
 
 .visually-hidden {
 	position: absolute;
@@ -14,9 +26,75 @@
 }
 
 body {
-	min-width: 320px;
-	background-color: #f0f0f0;
+	font-weight: 300;
 	font-size: 16px;
-	color: #212121;
-	font-family: Roboto, Arial, sans-serif;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #292929;
+	font-family: "Poppins", "Arial", sans-serif;
+	background-color: #f0f0f0;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Website color schemes (applies to all browser-built elements: scroll, form elements...) */
+[data-color-scheme="dark"] {
+	color-scheme: dark;
+}
+
+[data-color-scheme="light"] {
+	color-scheme: light;
+}
+
+/* Dark theme */
+html._dark body {
+	background-color: #1e2023;
+	color: #f0f0f0;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+	.main {
+		gap: 124px;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.main {
+		gap: 164px;
+	}
+}
+
+.brand-color {
+	color: #00b068;
+}
+
+/* Dark theme */
+html._dark {
+	.brand-color {
+		color: #14c57c;
+	}
+}
+
+/* Temporary button to switch theme */
+.switch-theme-test {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 8px;
+	padding: 12px 24px;
+	background: #00b068;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.03em;
+	color: #f0f0f0;
+	font-family: "Poppins", sans-serif;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
 }
