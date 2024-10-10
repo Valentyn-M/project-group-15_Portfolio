@@ -1,34 +1,64 @@
+/* Обнуление */
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p {
-  margin: 0;
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-a {
-  color: currentColor;
-  text-decoration: none;
+textarea,
+button,
+input {
+	font-weight: inherit;
+	font-size: inherit;
+	color: inherit;
+	font-family: inherit;
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
+	background-color: inherit;
 }
 
+address {
+	font-style: normal;
+}
+
+/*
+Зображення необхідно зробити блоковим, щоб прибрати нижній «зазор» рядкового елемента.
+Максимальна ширина в 100% гарантує, що зображення буде зменшуватися, якщо необхідно.
+*/
 img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	overflow-wrap: break-word;
 }
