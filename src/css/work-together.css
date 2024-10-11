@@ -21,6 +21,16 @@
 	text-transform: uppercase;
 	font-family: "Impact", sans-serif;
 	margin-bottom: 40px;
+	transition: color 0.3s ease
+}
+
+@media only screen and (min-width: 768px) {
+	.work-together-title {
+		font-size: 108px;
+		line-height: 1.14815;
+		letter-spacing: 0.02em;
+		margin-bottom: 60px;
+	}
 }
 
 .work-together-body {
@@ -29,10 +39,19 @@
 	gap: 40px;
 }
 
+@media only screen and (min-width: 768px) {
+	.work-together-body {
+		gap: 60px;
+	}
+}
+
+/* #region Contacts */
+
 .work-together-contacts {
 	display: flex;
 	flex-direction: column;
 	gap: 32px;
+	transition: color 0.3s ease
 }
 
 .work-together-contacts-text {
@@ -42,10 +61,25 @@
 	text-transform: uppercase;
 }
 
+@media only screen and (min-width: 768px) {
+	.work-together-contacts-text {
+		font-size: 20px;
+		line-height: 1.6;
+		max-width: 488px;
+	}
+}
+
 .work-together-contacts-list {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+	.work-together-contacts-list {
+		display: flex;
+		flex-direction: row;
+	}
 }
 
 .work-together-contacts-item {
@@ -76,6 +110,10 @@ html._dark .work-together-contacts-link:focus {
 	color: #14c57c;
 }
 
+/* #endregion */
+
+/* #region Form */
+
 .work-together-form {
 	display: flex;
 	flex-direction: column;
@@ -89,7 +127,10 @@ html._dark .work-together-contacts-link:focus {
 	padding: 12px 16px;
 	width: 100%;
 	background-color: #e4e5e6;
-	transition: background-color 0.3s ease 0s;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.25s ease;
+	outline: none;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
 }
 
 /* Dark theme */
@@ -98,12 +139,22 @@ html._dark .work-together-input {
 }
 
 .work-together-input:focus {
-	outline: 2px solid #00b068;
+	box-shadow: 0 0 0 2px #00b068;
 }
 
 /* Dark theme */
 html._dark .work-together-input:focus {
-	outline: 2px solid #14c57c;
+	box-shadow: 0 0 0 2px #14c57c;
+}
+
+.work-together-input::placeholder {
+	color: #292929;
+	transition: color 0.1s ease;
+}
+
+/* Dark theme */
+html._dark .work-together-input::placeholder {
+	color: #f0f0f0;
 }
 
 .work-together-input.error {
@@ -119,19 +170,22 @@ html._dark .work-together-input:focus {
 	display: none;
 }
 
-.work-together-error-messag._active {
+.work-together-error-message._active {
 	display: block;
 }
 
 .work-together-textarea {
 	display: flex;
 	border-radius: 8px;
-	padding: 12px 16px;
+	padding: 16px;
 	width: 100%;
 	height: 128px;
 	background-color: #e4e5e6;
-	transition: background-color 0.3s ease 0s;
+	transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.25s ease;
+	outline: none;
 	resize: none;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
 }
 
 /* Dark theme */
@@ -140,18 +194,31 @@ html._dark .work-together-textarea {
 }
 
 .work-together-textarea:focus {
-	outline: 2px solid #00b068;
+	box-shadow: 0 0 0 2px #00b068;
 }
 
 /* Dark theme */
 html._dark .work-together-textarea:focus {
-	outline: 2px solid #14c57c;
+	box-shadow: 0 0 0 2px #14c57c;
+}
+
+.work-together-textarea::placeholder {
+	color: #292929;
+	transition: color 0.1s ease;
+}
+
+/* Dark theme */
+html._dark .work-together-textarea::placeholder {
+	color: #f0f0f0;
 }
 
 .work-together-btn {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-transform: uppercase;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
 	border-radius: 8px;
 	padding: 12px 24px;
 	width: 100%;
@@ -159,11 +226,31 @@ html._dark .work-together-textarea:focus {
 	font-weight: 500;
 	color: #f0f0f0;
 	transition: background-color 0.3s ease, color 0.3s ease;
+	outline: none;
+}
+
+@media only screen and (min-width: 768px) {
+	.work-together-btn {
+		width: auto;
+		align-self: flex-start;
+	}
 }
 
 /* Dark theme */
 html._dark .work-together-btn {
 	background-color: #14c57c;
-	/* color: #f0f0f0; */
-	color: red;
+	color: #f0f0f0;
 }
+
+.work-together-btn:hover,
+.work-together-btn:focus {
+	background-color: #009156;
+}
+
+/* Dark theme */
+html._dark .work-together-btn:hover,
+html._dark .work-together-btn:focus {
+	background-color: #009156;
+}
+
+/* #endregion */
