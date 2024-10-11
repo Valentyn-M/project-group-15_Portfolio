@@ -131,6 +131,7 @@ html._dark .work-together-contacts-link:focus {
 	outline: none;
 	letter-spacing: 0.03em;
 	line-height: 1.5;
+	color: #292929;
 }
 
 /* Dark theme */
@@ -148,7 +149,8 @@ html._dark .work-together-input:focus {
 }
 
 .work-together-input::placeholder {
-	color: #292929;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
 	transition: color 0.1s ease;
 }
 
@@ -186,6 +188,7 @@ html._dark .work-together-input::placeholder {
 	resize: none;
 	letter-spacing: 0.03em;
 	line-height: 1.5;
+	color: #292929;
 }
 
 /* Dark theme */
@@ -203,7 +206,8 @@ html._dark .work-together-textarea:focus {
 }
 
 .work-together-textarea::placeholder {
-	color: #292929;
+	letter-spacing: 0.03em;
+	line-height: 1.5;
 	transition: color 0.1s ease;
 }
 
