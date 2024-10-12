@@ -1,4 +1,6 @@
 import iziToast from "izitoast";
+import axios from "axios";
+const BASE_URL = "https://portfolio-js.b.goit.study/api";
 
 const contactForm = document.querySelector(".work-together-form");
 const inputEmail = contactForm.elements.email;
@@ -104,7 +106,10 @@ contactForm.addEventListener("submit", (event) => {
 		return;
 	}
 
-
+	// Send user data
+	sendData(formData.email, formData.message)
+		.then(data => console.log(data))
+		.catch(error => console.log(error));
 
 	// Clear LocalStorage, Object with form data, Form
 	iconSuccess.classList.remove("is-active");
@@ -127,4 +132,16 @@ function hideErrorClass() {
 	massageError.classList.remove("is-active");
 	inputEmail.classList.remove("error");
 	iconSuccess.classList.add("is-active");
+}
+
+// ---------------------------------------------
+
+async function sendData(email, message) {
+	const formData = {
+		email: email,
+		comment: message,
+	};
+
+	const response = await axios.post(`${BASE_URL}/requests`, formData);
+	return response.data;
 }
