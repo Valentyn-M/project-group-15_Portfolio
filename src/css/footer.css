@@ -97,6 +97,7 @@
 @media (min-width: 768px) {
 	.footer {
 		height: 216px;
+		/* flex-direction: column; */
 	}
 
 	.footer-container {
@@ -123,15 +124,15 @@
 		/* margin-right: 20px; */
 	}
 
-	.footer-container p {
-		/* width: 351px; */
+	.footer p {
+		width: 351px;
 		height: 24px;
 		position: absolute;
 		font-size: 16px;
 		text-align: left;
 		margin-left: 385px;
 		margin-right: 32px;
-		padding-right: 20px;
+		margin-bottom: 24px;
 	}
 }
 
