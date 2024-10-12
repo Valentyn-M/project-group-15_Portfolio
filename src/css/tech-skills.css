@@ -1,4 +1,80 @@
 .tech-skills-container {
-	background: #e4e5e6;
-	height: 100px;
+  padding: 0;
+  overflow: hidden; /* ховає елементи, які виходять за межі контейнера */
+  white-space: nowrap; /* не дозволяє переносити елементи на новий рядок */
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 133%;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.linear {
+  padding: 40px 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #bcdfd1;
+  position: relative;
+  z-index: 2;
+  }
+
+.tech-skills-marquee {
+  flex-shrink: 0;
+  white-space: nowrap;
+  animation-name: marquee;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.rotate {
+  padding: 40px 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #e4e5e6;
+  display: flex;
+  transform: rotate(2deg); /* Нахиляємо текст під кутом */
+  color: #00b068;
+  position: relative;
+  z-index: 1;
+}
+
+.tech-skills-list {
+  display: flex;
+  gap: 16px;
+  flex-direction: row;
+  justify-content: start;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* початкове положення — за межами справа */
+  }
+
+  100% {
+    transform: translateX(-100%); /* рух до лівого краю */
+  }
+}
+
+.tech-skills-item {
+  display: flex;
+  align-items: center;
+}
+
+.square {
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  transform: rotate(-180deg);
+  margin-right: 16px;
+}
+
+.green {
+  background-color: #00b068;
+}
+
+.black {
+  background-color: #000000;
 }
