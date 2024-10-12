@@ -1,6 +1,6 @@
 import iziToast from "izitoast";
 import axios from "axios";
-const BASE_URL = "https://portfolio-js.b.goit.study/api";
+import { BASE_URL } from "./config";
 
 const contactForm = document.querySelector(".work-together-form");
 const inputEmail = contactForm.elements.email;
@@ -8,6 +8,7 @@ const textareaMessage = contactForm.elements.message;
 const iconSuccess = contactForm.querySelector(".work-together-input-success-icon");
 const massageError = contactForm.querySelector(".work-together-input-error-message");
 const localStorageKey = "contact-form-state";
+const modalForm = document.querySelector(".modal-overlay");
 
 // Object for form data
 const formData = {
@@ -83,14 +84,11 @@ contactForm.addEventListener("submit", (event) => {
 
 	// If email field is empty
 	if (formData.email === '') {
-		return iziToast.error({
-			class: "izi-error",
+		return iziToast.warning({
+			class: "izitoast-warning",
 			titleSize: "16px",
-			titleLineHeight: "1.5",
 			message: "Please enter your email",
 			messageSize: "16px",
-			messageColor: "#292929",
-			messageLineHeight: "1.5",
 			close: true,
 			closeOnEscape: true,
 			position: "topRight",
@@ -106,18 +104,40 @@ contactForm.addEventListener("submit", (event) => {
 		return;
 	}
 
+	// ------------ Work with Backend --------------
 	// Send user data
 	sendData(formData.email, formData.message)
-		.then(data => console.log(data))
-		.catch(error => console.log(error));
-
-	// Clear LocalStorage, Object with form data, Form
-	iconSuccess.classList.remove("is-active");
-	localStorage.removeItem(localStorageKey);
-	formData.email = "";
-	formData.message = "";
-	const form = event.target;
-	form.reset();
+		// Get response
+		.then(data => {
+			modalForm.querySelector('.modal-form-title').textContent = `${data.title}`;
+			modalForm.querySelector('.modal-form-text').textContent = `${data.message}`;
+			modalForm.classList.add("is-active");
+			closeModal();
+			// Clear LocalStorage, Object with form data, Form
+			iconSuccess.classList.remove("is-active");
+			localStorage.removeItem(localStorageKey);
+			formData.email = "";
+			formData.message = "";
+			const form = event.target;
+			form.reset();
+		})
+		.catch(error => {
+			return iziToast.error({
+				class: "izitoast-error",
+				title: `${error.code}`,
+				titleSize: "16px",
+				titleLineHeight: "1.3",
+				message: `${error.message}. ${error.response.data.message}`,
+				messageSize: "16px",
+				messageLineHeight: "1.4",
+				close: true,
+				closeOnEscape: true,
+				position: "topRight",
+				timeout: 10000,
+				animateInside: false,
+				transitionIn: "bounceInLeft",
+			});
+		});
 })
 
 // --------------------------------------------
@@ -134,14 +154,41 @@ function hideErrorClass() {
 	iconSuccess.classList.add("is-active");
 }
 
+function closeModal() {
+	// Close by click
+	modalForm.addEventListener("click", modalActions);
+	function modalActions(event) {
+		const targetElement = event.target;
+
+		if (targetElement.closest(".modal-overlay")) {
+			modalForm.classList.remove("is-active");
+			modalForm.removeEventListener("click", modalActions);
+		}
+
+		if (targetElement.closest(".modal-form-close-icon")) {
+			modalForm.classList.remove("is-active");
+			modalForm.removeEventListener("click", modalActions);
+		}
+	}
+
+	// Close by Escape
+	document.addEventListener("keyup", keyActions);
+	function keyActions(event) {
+		if (event.code === "Escape") {
+			modalForm.classList.remove("is-active");
+			document.removeEventListener("keyup", keyActions);
+		}
+	}
+}
+
 // ---------------------------------------------
 
 async function sendData(email, message) {
 	const formData = {
 		email: email,
-		comment: message,
+		comment: message || "Message is empty"
 	};
 
-	const response = await axios.post(`${BASE_URL}/requests`, formData);
+	const response = await axios.post(`${BASE_URL}requests`, formData);
 	return response.data;
 }
