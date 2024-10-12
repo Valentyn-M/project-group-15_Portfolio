@@ -40,14 +40,39 @@ contactForm.addEventListener("input", event => {
 	localStorage.setItem(localStorageKey, JSON.stringify(formData));
 })
 
+// Activate input or textarea
+inputEmail.addEventListener("focus", function (event) {
+	// Hide placeholder
+	inputEmail.setAttribute('data-placeholder', inputEmail.getAttribute('placeholder'));
+	inputEmail.setAttribute('placeholder', '');
+	// Delete error classes
+	massageError.classList.remove("is-active");
+	inputEmail.classList.remove("error");
+	iconSuccess.classList.remove("is-active");
+})
+textareaMessage.addEventListener("focus", function (event) {
+	// Hide placeholder
+	textareaMessage.setAttribute('data-placeholder', textareaMessage.getAttribute('placeholder'));
+	textareaMessage.setAttribute('placeholder', '');
+})
+
 // Check email field after entering data
 inputEmail.addEventListener("blur", function () {
-	if (!inputEmail.checkValidity()) {
-		activateErrorClass();
+	if (formData.email != '') {
+		if (!inputEmail.checkValidity()) {
+			activateErrorClass();
+		}
+		else {
+			hideErrorClass();
+		}
 	}
-	else {
-		hideErrorClass();
-	}
+	// Put placeholder back
+	inputEmail.setAttribute('placeholder', inputEmail.getAttribute('data-placeholder'));
+})
+
+textareaMessage.addEventListener("blur", function (event) {
+	// Put placeholder back
+	textareaMessage.setAttribute('placeholder', textareaMessage.getAttribute('data-placeholder'));
 })
 
 // Send form
@@ -67,7 +92,7 @@ contactForm.addEventListener("submit", (event) => {
 			close: true,
 			closeOnEscape: true,
 			position: "topRight",
-			timeout: 5000,
+			timeout: 4000,
 			animateInside: false,
 			transitionIn: "bounceInLeft",
 		});
@@ -75,21 +100,22 @@ contactForm.addEventListener("submit", (event) => {
 
 	// If email is incorrect
 	if (!inputEmail.checkValidity()) {
-		return;
-	}
-
-	if (!inputEmail.checkValidity()) {
 		activateErrorClass();
 		return;
 	}
 
+
+
 	// Clear LocalStorage, Object with form data, Form
+	iconSuccess.classList.remove("is-active");
 	localStorage.removeItem(localStorageKey);
 	formData.email = "";
 	formData.message = "";
 	const form = event.target;
 	form.reset();
 })
+
+// --------------------------------------------
 
 function activateErrorClass() {
 	massageError.classList.add("is-active");
