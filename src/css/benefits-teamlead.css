@@ -2,6 +2,69 @@
 	transition: color 0.3s ease;
 }
 
+.benefits-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 32px;
+}
+
+@media only screen and (min-width: 768px) {
+	.benefits-list {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: auto auto auto;
+		grid-template-areas:
+			". expertise"
+			"communication art"
+			"urgent .";
+		gap: 32px;
+	}
+
+	.benefits-item:nth-child(1) {
+		grid-area: expertise;
+	}
+
+	.benefits-item:nth-child(2) {
+		grid-area: communication;
+	}
+
+	.benefits-item:nth-child(3) {
+		grid-area: art;
+	}
+
+	.benefits-item:nth-child(4) {
+		grid-area: urgent;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.benefits-list {
+		margin-top: -96px;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: auto auto;
+		gap: 40px;
+		grid-template-areas:
+			". . expertise"
+			"art urgent communication";
+	}
+
+	.benefits-item:nth-child(1) {
+		grid-area: expertise;
+	}
+
+	.benefits-item:nth-child(2) {
+		grid-area: communication;
+	}
+
+	.benefits-item:nth-child(3) {
+		grid-area: art;
+	}
+
+	.benefits-item:nth-child(4) {
+		grid-area: urgent;
+	}
+}
+
 .benefits-title {
 	font-weight: 400;
 	font-size: 52px;
@@ -9,6 +72,21 @@
 	text-transform: uppercase;
 	font-family: "Impact", sans-serif;
 	margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+	.benefits-title {
+		font-size: 108px;
+		line-height: 1.14815;
+		letter-spacing: 0.02em;
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 1280px) {
+	.benefits-title {
+		max-width: 700px;
+	}
 }
 
 .benefits-icon-wrap {
@@ -35,4 +113,18 @@ html._dark .benefits-icon-wrap {
 /* Dark theme */
 html._dark .benefits-icon {
 	fill: #14c57c;
+}
+
+.benefits-subtitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.55556;
+	text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+	.benefits-subtitle {
+		font-size: 20px;
+		line-height: 1.6;
+	}
 }
