@@ -1,4 +1,22 @@
-.faq-container {
-	background: #e4e5e6;
-	height: 100px;
+/* .faq-container {
+  background: #e4e5e6;
+  height: 100px;
+} */
+.faq-title {
+  font-family: 'Impact', sans-serif;
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 1.23077;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #292929;
+}
+
+.faq-span {
+  color: #00b068;
+}
+
+.faq-title-cont {
+  margin-bottom: 40px;
 }
