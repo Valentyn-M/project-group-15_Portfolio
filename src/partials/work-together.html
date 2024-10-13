@@ -1,8 +1,52 @@
-<section class="work-together">
+<section class="work-together" id="work-together">
 	<div class="work-together-container">
-		Work together
-		<svg class="icon" width="16" height="16">
-			<use href="/img/icons.svg#icon-success"></use>
-		</svg>
+		<h2 class="work-together-title">Let’s <span class="brand-color">work together</span></h2>
+		<div class="work-together-body">
+			<div class="work-together-contacts">
+				<div class="work-together-contacts-text">Contact me to transform your ideas into exceptional solutions.</div>
+				<address class="work-together-contacts-addresses">
+					<ul class="work-together-contacts-list">
+						<li class="work-together-contacts-item">
+							<svg class="work-together-contacts-icon" width="24" height="24">
+								<use href="/img/icons.svg#icon-phone"></use>
+							</svg>
+							<a href="tel:+380904567890" class="work-together-contacts-link">+38 090 456 78 90</a>
+						</li>
+						<li class="work-together-contacts-item">
+							<svg class="work-together-contacts-icon" width="24" height="24">
+								<use href="/img/icons.svg#icon-email"></use>
+							</svg>
+							<a href="mailto:lloydjefferson@gmail.com" class="work-together-contacts-link">lloydjefferson@gmail.com</a>
+						</li>
+						<li class="work-together-contacts-item">
+							<svg class="work-together-contacts-icon" width="24" height="24">
+								<use href="/img/icons.svg#icon-location"></use>
+							</svg>
+							<a href="https://www.google.com/maps?q=USA,+New+York" target="_blank"
+								class="work-together-contacts-link">USA, New York</a>
+						</li>
+					</ul>
+				</address>
+			</div>
+			<form class="work-together-form" novalidate>
+				<div class="work-together-form-item">
+					<label class="work-together-label visually-hidden" for="input-email">Email</label>
+					<div class="work-together-input-wrap">
+						<input class="work-together-input" id="iinput-email" name="email" type="email" placeholder="Your email*"
+							pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" autocomplete="off">
+						<svg class="work-together-input-success-icon" width="16" height="16">
+							<use href="/img/icons.svg#icon-success"></use>
+						</svg>
+						<p class="work-together-input-error-message">Invalid email, try again</p>
+					</div>
+				</div>
+				<div class="work-together-form-item">
+					<label class="work-together-label visually-hidden" for="user-message">Message</label>
+					<textarea class="work-together-textarea" name="message" id="user-message" placeholder="Message"
+						autocomplete="off"></textarea>
+				</div>
+				<button class="work-together-btn" type="submit">Send massage</button>
+			</form>
+		</div>
 	</div>
 </section>

@@ -1,3 +1,6 @@
+/* Styles for libraries */
+@import url('izitoast/dist/css/iziToast.min.css');
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
@@ -96,6 +99,6 @@ html._dark {
 	color: #f0f0f0;
 	font-family: "Poppins", sans-serif;
 	position: fixed;
-	bottom: 20px;
+	top: 20px;
 	right: 20px;
 }
