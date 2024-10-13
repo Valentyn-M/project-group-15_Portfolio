@@ -1,5 +1,53 @@
-<section class="hero">
-	<div class="hero-container">
-		Hero
-	</div>
+<section class="hero" id="hero">
+  <div class="hero-container">
+    <h1 class="hero-title">
+      Hello, I am
+      <picture>
+        <source
+          srcset="
+            /img/hero/pc/hero-img1x.jpg 1x,
+            /img/hero/pc/hero-img2x.jpg 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <img
+          class="hero-img"
+          src="/img/hero/pc/hero-img1x.jpg"
+          alt="LLoyd Jefferson"
+          width="108"
+          height="108"
+        />
+      </picture>
+	  <span class="hero-subtitle brand-color">Fullstack developer</span>
+    </h1>
+    <div class="hero-description">
+      <a href="#work-together" class="hero-reference">
+        <svg class="hero-arrow">
+          <use href="/img/icons.svg#icon-arrow-long"></use>
+        </svg>
+        <p class="hero-reference-text">Order the project</p>
+      </a>
+
+      <p class="hero-text">
+        I work with people all over the world to create
+        <span class="brand-color">impressive</span> and
+        <span class="brand-color">functional websites</span> that reflect each
+        client’s unique personality.
+      </p>
+    </div>
+  </div>
+  <ul class="hero-links">
+    <li><a href="https://www.instagram.com/goitclub/" target="_blank" rel="nooper noreferrer">Instagram</a></li>
+    <li><a href="https://www.facebook.com/goITclub/" target="_blank" rel="nooper noreferrer">Facebook</a></li>
+    <li>
+      <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank" rel="nooper noreferrer"
+        >Linkedin</a
+      >
+    </li>
+    <li>
+      <a href="https://github.com/Valentyn-M/project-group-15_Portfolio" target="_blank" rel="nooper noreferrer"
+        >GitHub</a
+      >
+    </li>
+  </ul>
 </section>
