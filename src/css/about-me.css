@@ -1,4 +1,404 @@
-.about-me-container {
+/* .about-me-container {
 	background: #e4e5e6;
 	height: 100px;
+} */
+.about-me-container {
+	background: #F0F0F0;
+	padding: 20px;
+	display: block;
+	/* text-align: center; */
+}
+
+.about-title {
+	/* padding-right: 123px; */
+	font-weight: 400;
+	font-size: 52px;
+	line-height: 1.23077;
+	text-transform: uppercase;
+	font-family: "Impact", sans-serif;
+	margin-bottom: 40px;
+	transition: color 0.3s ease;
+	white-space: nowrap;
+	letter-spacing: 0.03em;
+	color: #292929;
+}
+
+.brand-color-about {
+	font-family: "Impact", sans-serif;
+	font-weight: 400;
+	font-size: 52px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-align: right;
+	color: #00b068;
+}
+
+.profile-image {
+	width: 100%;
+	max-width: 320px;
+	border-radius: 16px;
+	margin-bottom: 40px;
+	/* margin: 20px 0; */
+}
+
+.bio,
+.education,
+.role {
+	text-align: left;
+	margin-bottom: 40;
+}
+
+.bio-title,
+.edu-title,
+.role-title {
+	color: #292929;
+	font-family: Poppins;
+	font-size: 32px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 125%;
+	text-transform: uppercase;
+	padding-top: 40px;
+	padding-bottom: 32px;
+	/* padding-right: 265px; */
+	white-space: nowrap;
+	letter-spacing: 0.02em;
+
+
+}
+
+.bio-text-1 {
+	padding-bottom: 24px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #292929;
+}
+
+.bio-text-2 {
+	/* padding-bottom: 24px; */
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: #292929;
+}
+
+.edu-role-part {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-top: 20px;
+}
+
+.edu-list,
+.role-list {
+	list-style: none;
+	padding-left: 20px;
+	margin: 0;
+	position: relative;
+
+}
+
+.edu-li-item,
+.role-li-item {
+	position: relative;
+	padding-left: 20px;
+	margin-bottom: 10px;
+	/* padding-bottom: 12px; */
+	line-height: 1.5;
+}
+
+.edu-li-item::before,
+.role-li-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 4px;
+	height: 4px;
+	background-color: #00B068;
+	border-radius: 1px;
+}
+
+@media screen and (max-width:360px) {
+	.about-me-container {
+		max-width: 360px;
+
+	}
+
+	.about-me {
+		margin: 0 auto;
+		padding: 0 20px 0 20px;
+	}
+
+	.about-title {
+		width: 217px;
+		height: 64px;
+	}
+
+	.about-img {
+		border-radius: 16px;
+		width: 320px;
+		height: 374px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.bio-text-1,
+	.bio-text-2 {
+		width: 320px;
+		padding: 12px 0;
+	}
+
+	.bio-title,
+	.edu-title,
+	.role-title {
+		padding-top: 28px;
+		padding-bottom: 20px;
+	}
+}
+
+@media screen and (min-width:360px) {
+	.about-me {
+		margin: 0 auto;
+		padding: 0 20px 0 20px;
+	}
+
+	.about-me-container {
+		width: 360px;
+
+	}
+
+	.about-title {
+		width: 217px;
+		height: 64px;
+
+	}
+
+	.about-img {
+		border-radius: 16px;
+		width: 320px;
+		height: 374px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.bio-text-1,
+	.bio-text-2 {
+		/* display: block; */
+		width: 320px;
+		padding: 12px 0;
+	}
+
+	.bio-title,
+	.edu-title,
+	.role-title {
+		padding-top: 28px;
+		padding-bottom: 20px;
+
+	}
+}
+
+@media screen and (min-width:768px) {
+
+	.about-me {
+		margin: 0 auto;
+		padding: 0 32px 0 32px;
+	}
+
+	.about-me-container {
+		width: 768px;
+		display: block;
+
+	}
+
+	.about-title {
+
+		font-family: "Impact", sans-serif;
+		font-weight: 400;
+		font-size: 108px;
+
+		/* line-height: 124px; */
+		line-height: 115%;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		text-align: right;
+		color: #292929;
+		width: 437px;
+		height: 124px;
+
+	}
+
+	.brand-color-about {
+		font-family: "Impact", sans-serif;
+		font-weight: 400;
+		font-size: 108px;
+
+		/* line-height: 124px; */
+		line-height: 115%;
+		letter-spacing: 0.02em;
+		text-transform: uppercase;
+		text-align: right;
+		color: #00b068;
+	}
+
+	.img-bio-part {
+
+		display: flex;
+		/* display: block; */
+		justify-content: space-between;
+		height: 760px;
+	}
+
+	.about-img {
+		align-self: flex-end;
+		width: 336px;
+		height: 392px;
+		/* flex-shrink: 0; */
+		border-radius: 16px;
+		padding: 0px;
+	}
+
+	.bio {
+		/* display: inline-flex; */
+		padding: 0px 32px;
+		align-items: flex-start;
+		gap: 10px;
+	}
+
+	.edu-role-part {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		margin-top: 60px;
+	}
+
+	.bio-title,
+	.edu-title,
+	.role-title {
+		font-family: "Poppins", sans-serif;
+		font-weight: 500;
+		font-size: 36px;
+		/* line-height: 48px; */
+		line-height: 133%;
+		letter-spacing: 0.01em;
+		text-transform: uppercase;
+		color: #292929;
+
+		padding-top: 0px;
+		padding-bottom: 32px;
+	}
+
+	.bio-text-1,
+	.bio-text-2 {
+		align-self: stretch;
+	}
+
+	.education,
+	.role {
+		width: 48%;
+	}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+
+	.about-me {
+		margin: 0 auto;
+		padding: 0 32px 0 32px;
+	}
+
+	.about-me-container {
+		width: 1280px;
+
+	}
+
+	.about-img {
+		width: 384px;
+		height: 448px;
+		flex-shrink: 0;
+		/* padding: 0; */
+		margin-left: 208px;
+
+	}
+
+	.about-title {
+		letter-spacing: 1.8px;
+	}
+
+	.img-bio-part {
+
+		display: flex;
+		height: 760px;
+	}
+
+
+	.bio {
+		/* display: inline-flex; */
+		flex-direction: column;
+		align-items: flex-start;
+		/* width: 55%; */
+		height: 488px;
+		/* gap: 32px; */
+		padding: 0;
+	}
+
+	.bio-text-1,
+	.bio-text-2 {
+		width: 488px;
+	}
+
+	.edu-role-part {
+		display: flex;
+		justify-content: center;
+		text-align: left;
+		height: auto;
+		margin-top: 80px;
+		padding-top: 0%;
+		margin-right: 104px;
+		margin-left: 208px;
+	}
+
+	.bio-title,
+	.edu-title,
+	.role-title {
+		letter-spacing: 0.05px;
+	}
+
+	.bio-text-1 {
+		padding-top: 0px;
+		padding-bottom: 24px;
+	}
+
+	.bio-text-2 {
+		padding-top: 0px;
+		padding-bottom: 232px;
+	}
+
+	.bio-text-1,
+	.bio-text-2 {
+		align-self: stretch;
+	}
+
+
+	.role {
+		padding-left: 132px;
+
+	}
+
+	.edu-list,
+	.role-list {
+		padding-left: 0%;
+	}
+
+
 }
