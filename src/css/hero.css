@@ -10,10 +10,16 @@
 	backdrop-filter: blur(6px);
 		
 }
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+	.hero-container {
+		background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+	}
+}
 .hero-title {
 	font-family: "Impact", sans-serif;
 	font-weight: 400;
-	font-size: 64px;
+	font-size: 60px;
 	line-height: 125%;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -21,7 +27,7 @@
 }
 .hero-subtitle {
 	font-weight: 400;
-	font-size: 64px;
+	font-size: 60px;
 	line-height: 125%;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
@@ -53,6 +59,7 @@
 	margin-top: 72px;
 	position: relative;
 	transition: color 0.3s ease 0s;
+	margin-right: 20px;
 }
 
 .hero-reference::after {
@@ -63,9 +70,7 @@
 	width: 165px;
 	height: 92px;
 	position: absolute;
-	top: 50%;
-	left: 103%;
-	transform: translate(-50%, -50%);
+	margin-left: 115px;
 	z-index: -1;
 	transition: color 0.3s ease 0s;
 }
@@ -103,10 +108,17 @@
 					url('/img/hero/tablet/bg-tab-down.png');
 		background-repeat: no-repeat, no-repeat;
 		background-position: top right,
-					right 224px bottom 18px;
+					right 190px bottom 60px;
 		backdrop-filter: blur(6px);
+		background-size: 356px 276px, 356px 276px;
 			
 	}
+				@media (-webkit-min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi) {
+					.hero-container {
+						background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+					}
+		}
 	.hero-title {
 		font-size: 136px;
 		line-height: 115%;
@@ -140,7 +152,7 @@
 @media only screen and (min-width: 1280px) {
 	.hero-container {
 			max-width: 1280px;
-			padding: 184px 32px 116px 32px;
+			padding: 184px 32px 0 32px;
 			background-image: url('/img/hero/pc/bg-pc-up.png'),
 					url('/img/hero/pc/bg-pc-down.png');
 				background-repeat: no-repeat, no-repeat;
@@ -149,6 +161,12 @@
 				backdrop-filter: blur(6px);
 			
 		}
+				@media (-webkit-min-device-pixel-ratio: 2),
+				(min-resolution: 192dpi) {
+					.hero-container {
+						background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+					}
+				}
 	.hero-title {
 		font-size: 136px;
 		line-height: 115%;
@@ -162,7 +180,7 @@
 		line-height: 115%;
 		letter-spacing: 0.01em;
 		width: 1216px;
-		height: 256px;
+		height: 156px;
 	}
 	.hero-img {
 		display: block;
