@@ -24,7 +24,7 @@
   flex-shrink: 0;
   white-space: nowrap;
   animation-name: marquee;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
@@ -77,4 +77,22 @@
 
 .black {
   background-color: #000000;
+}
+
+html._dark {
+  .tech-skills-container {
+    color: #f0f0f0;
+  }
+
+  .linear {
+    background-color: #204136;
+  }
+
+  .rotate {
+    background-color: #2a2d32;
+  }
+
+    .black {
+      background-color: #f0f0f0;
+    }
 }
