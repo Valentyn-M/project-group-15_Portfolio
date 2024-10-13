@@ -81,6 +81,17 @@ background-color: #2a2d32;
 	color: #f0f0f0;
 }
 
+.load-more-btn {
+
+font-weight: 400;
+font-size: 18px;
+line-height: 1.56;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+transition: color 0.3s ease;
+}
+
 @media screen and (min-width: 768px) {
 .my-projects {
 margin-bottom: 124px;
