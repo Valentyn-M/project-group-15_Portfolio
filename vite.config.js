@@ -9,7 +9,6 @@ export default defineConfig(({ command }) => {
 		define: {
 			[command === 'serve' ? 'global' : '_global']: {},
 		},
-		base: '/project-group-15_Portfolio/',
 		root: 'src',
 		build: {
 			sourcemap: true,
