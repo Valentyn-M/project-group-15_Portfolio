@@ -1,7 +1,7 @@
-.tech-skills-container {
+.tech-skills-scroll {
   padding: 0;
-  overflow: hidden; /*ховає елементи, які виходять за межі контейнера*/
-  white-space: nowrap; /* не дозволяє переносити елементи на новий рядок */
+  overflow: hidden;
+  white-space: nowrap;
   font-weight: 500;
   font-size: 36px;
   line-height: 133%;
@@ -31,16 +31,16 @@
   display: flex;
   flex-shrink: 0;
   white-space: nowrap;
-  animation: marquee-linear 8s linear infinite;
+  animation: marquee-linear 20s linear infinite;
 }
 
 @keyframes marquee-linear {
   0% {
-    transform: translateX(0); /* Початок з початкової точки */
+    transform: translateX(0);
   }
 
   100% {
-    transform: translateX(-50%); /* Зміщення на половину ширини для плавного циклу */
+    transform: translateX(-100%);
   }
 }
 
@@ -48,11 +48,16 @@
   animation-play-state: paused;
 }
 
+.tech-skills-marquee-content {
+  display: flex;
+  min-width: 100%;
+}
+
 .tech-skills-marquee-rotate {
   display: flex;
   flex-shrink: 0;
   white-space: nowrap;
-  animation: marquee-rotate 17s linear infinite;
+  animation: marquee-rotate 25s linear infinite;
 }
 
 .rotate {
@@ -61,7 +66,7 @@
   height: 128px;
   background-color: #e4e5e6;
   display: flex;
-  transform: rotate(2deg); /* Нахиляємо текст під кутом */
+  transform: rotate(2deg);
   color: #00b068;
   position: relative;
   z-index: 1;
@@ -72,12 +77,10 @@
 @keyframes marquee-rotate {
   0% {
     transform: translateX(0);
-    /* Початок з початкової точки */
   }
 
   100% {
-    transform: translateX(-50%);
-    /* Зміщення на половину ширини для плавного циклу */
+    transform: translateX(-100%);
   }
 }
 
