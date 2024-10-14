@@ -114,19 +114,47 @@ const projects = [
 let currentIndex = 0;
 const projectsPerPage = 3;
 
-function loadProjects() {
-  const projectsList = document.querySelector(".my-projects-list");;
-  const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
+function lazyLoadImage(img) {
+  const src = img.dataset.src;
+  const srcset = img.dataset.srcset;
+
+  if (src) {
+    img.src = src;
+  }
+  if (srcset) {
+    img.srcset = srcset;
+  }
+}
+
+function initLazyLoading() {
+  const images = document.querySelectorAll('.my-projects-image');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        lazyLoadImage(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  });
+
+  images.forEach((image) => {
+    observer.observe(image);
+  });
+}
+
+function loadProjects() {
+  const projectsList = document.querySelector(".my-projects-list");
+  const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
   let projectsHTML = remainingProjects.map((project) => {
     return `
       <li class="my-project-item">
         <picture>
-          <source srcset="${project.imagePc} 1x, ${project.imagePc2x} 2x" media="(min-width: 1280px)" />
-          <source srcset="${project.imageTab} 1x, ${project.imageTab2x} 2x" media="(min-width: 768px)" />
-          <source srcset="${project.imageMob} 1x, ${project.imageMob2x} 2x" media="(min-width: 360px)" />
-          <img src="${project.imagePc}" alt="${project.title}" width="320" height="194" class="my-projects-image" loading="lazy"/>
+          <source data-srcset="${project.imagePc} 1x, ${project.imagePc2x} 2x" media="(min-width: 1280px)" />
+          <source data-srcset="${project.imageTab} 1x, ${project.imageTab2x} 2x" media="(min-width: 768px)" />
+          <source data-srcset="${project.imageMob} 1x, ${project.imageMob2x} 2x" media="(min-width: 360px)" />
+          <img data-src="${project.imagePc}" alt="${project.title}" width="320" height="194" class="my-projects-image" loading="lazy"/>
         </picture>
         <p class="my-projects-tech-stack"> ${project.techStack}</p>
         <div class="my-projects-title-link">
@@ -142,8 +170,9 @@ function loadProjects() {
   }).join(''); 
 
   projectsList.innerHTML += projectsHTML;
-
   currentIndex += projectsPerPage;
+
+  initLazyLoading();
 
   if (currentIndex >= projects.length) {
     document.querySelector(".load-more-btn").style.display = "none";
@@ -151,6 +180,4 @@ function loadProjects() {
 }
 
 document.querySelector(".load-more-btn").addEventListener("click", loadProjects);
-
-
 window.addEventListener("load", loadProjects);
