@@ -1,4 +1,4 @@
-const basePath = window.location.hostname === 'localhost' ? '' : '/project-group-15_Portfolio/assets';
+const basePath = window.location.hostname === 'localhost' ? '' : '/project-group-15_Portfolio';
 
 
 const projects = [
@@ -26,12 +26,12 @@ const projects = [
 	},
 	{
 		title: "English Exellence website",
-		imageMob: "/src/img/my-projects/mobile/foto-3-mob-1x.jpg",
-		imageMob2x: "/src/img/my-projects/mobile/foto-3-mob-2x.jpg",
-		imageTab: "/src/img/my-projects/tablet/foto-3-tab-1x.jpg",
-		imageTab2x: "/src/img/my-projects/tablet/foto-3-tab-2x.jpg",
-		imagePc: "/src/img/my-projects/pc/foto-3-pc-1x.jpg",
-		imagePc2x: "/src/img/my-projects/pc/foto-3-pc-2x.jpg",
+		imageMob: "./img/my-projects/mobile/foto-3-mob-1x.jpg",
+		imageMob2x: "./img/my-projects/mobile/foto-3-mob-2x.jpg",
+		imageTab: "./img/my-projects/tablet/foto-3-tab-1x.jpg",
+		imageTab2x: "./img/my-projects/tablet/foto-3-tab-2x.jpg",
+		imagePc: "./img/my-projects/pc/foto-3-pc-1x.jpg",
+		imagePc2x: "./img/my-projects/pc/foto-3-pc-2x.jpg",
 		techStack: "React, JavaScript, Node JS, Git",
 		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
 	},
