@@ -2,6 +2,32 @@
 	transition: color 0.3s ease;
 }
 
+@media only screen and (min-width: 1280px) {
+	.benefits-container {
+		position: relative;
+	}
+
+	.benefits-container::before {
+		content: '';
+		position: absolute;
+		top: -116px;
+		width: calc(100% - (32px * 2));
+		height: calc(100% + 116px);
+		background-image: url(../img/benefits/pc/decor-bg_pc.png);
+		background-repeat: no-repeat;
+		background-position: top right;
+		background-size: 526px 408px;
+		z-index: -1;
+	}
+
+	@media (min-resolution: 192dpi) {
+		.benefits-container::before {
+			background-image: url(../img/benefits/pc/decor-bg_pc@2x.png);
+		}
+	}
+
+}
+
 .benefits-list {
 	display: grid;
 	grid-template-columns: 1fr;
@@ -98,6 +124,7 @@
 	justify-content: center;
 	background: #bcdfd1;
 	transition: background-color 0.3s ease;
+	margin-bottom: 16px;
 }
 
 /* Dark theme */
@@ -120,6 +147,7 @@ html._dark .benefits-icon {
 	font-size: 18px;
 	line-height: 1.55556;
 	text-transform: uppercase;
+	margin-bottom: 16px;
 }
 
 @media only screen and (min-width: 768px) {
