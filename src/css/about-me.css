@@ -32,7 +32,10 @@
 	text-align: right;
 	color: #00b068;
 }
-
+.about-content{
+	display: flex; 
+    flex-direction: column; 
+}
 .profile-image {
 	width: 100%;
 	max-width: 320px;
@@ -141,7 +144,10 @@
 		width: 217px;
 		height: 64px;
 	}
-
+	.about-content {
+        flex-direction: column; 
+        align-items: center; 
+    }
 	.about-img {
 		border-radius: 16px;
 		width: 320px;
@@ -191,7 +197,6 @@
 
 	.bio-text-1,
 	.bio-text-2 {
-		/* display: block; */
 		width: 320px;
 		padding: 12px 0;
 	}
@@ -321,7 +326,7 @@
 		width: 1280px;
 
 	}
-
+	
 	.about-img {
 		width: 384px;
 		height: 448px;
@@ -401,4 +406,37 @@
 	}
 
 
+}
+
+
+/* Dark theme */
+html._dark .about-me-container{
+	background-color:  #1E2023;
+}
+html._dark .about-title{
+	color: #F0F0F0;
+}
+html._dark .brand-color-about{
+	color: #14C57C;
+}
+html._dark .bio-title {
+	color: #F0F0F0;
+}
+html._dark .edu-title {
+	color: #F0F0F0;
+}
+html._dark .role-title{
+	color: #F0F0F0;
+}
+html._dark .bio-text-1{
+	color: #F0F0F0;
+}
+html._dark .bio-text-2{
+	color: #F0F0F0;
+}
+html._dark .edu-li-item::before{
+background-color: #14C57C;
+}
+html._dark .role-li-item::before{
+background-color: #14C57C;
 }
