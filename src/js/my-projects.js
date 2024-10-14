@@ -1,115 +1,115 @@
 const projects = [
 
-  {
-    title: "Wallet webservice",
-    imageMob: "/img/my-projects/mobile/foto-1-mob-1x.jpg",
-    imageMob2x: "/img/my-projects/mobile/foto-1-mob-2x.jpg",
-    imageTab: "/img/my-projects/tablet/foto-1-tab-1x.jpg",
-    imageTab2x: "/img/my-projects/tablet/foto-1-tab-2x.jpg",
-    imagePc: "/img/my-projects/pc/foto-1-pc-1x.jpg",
-    imagePc2x: "/img/my-projects/pc/foto-1-pc-2x.jpg",
-    techStack: "React, JavaScript, Node JS, Git",
-    link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-  },
-  {
-    title: "Green harvest webservice",
-    imageMob: "/img/my-projects/mobile/foto-2-mob-1x.jpg",
-    imageMob2x: "/img/my-projects/mobile/foto-2-mob-2x.jpg",
-    imageTab: "/img/my-projects/tablet/foto-2-tab-1x.jpg",
-    imageTab2x: "/img/my-projects/tablet/foto-2-tab-2x.jpg",
-    imagePc: "/img/my-projects/pc/foto-2-pc-1x.jpg",
-    imagePc2x: "/img/my-projects/pc/foto-2-pc-2x.jpg",
-    techStack: "React, JavaScript, Node JS, Git",
-    link: "https://valentyn-m.github.io/project-group-15_Portfolio/2",
-  },
-  {
-    title: "English Exellence website",
-    imageMob: "/img/my-projects/mobile/foto-3-mob-1x.jpg",
-    imageMob2x: "/img/my-projects/mobile/foto-3-mob-2x.jpg",
-    imageTab: "/img/my-projects/tablet/foto-3-tab-1x.jpg",
-    imageTab2x: "/img/my-projects/tablet/foto-3-tab-2x.jpg",
-    imagePc: "/img/my-projects/pc/foto-3-pc-1x.jpg",
-    imagePc2x: "/img/my-projects/pc/foto-3-pc-2x.jpg",
-    techStack: "React, JavaScript, Node JS, Git",
-    link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-  },
-  {
-      title: "power pulse webservice",
-      imageMob: "/img/my-projects/mobile/foto-4-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-4-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-4-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-4-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-4-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-4-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "mimino website",
-      imageMob: "/img/my-projects/mobile/foto-5-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-5-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-5-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-5-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-5-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-5-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "vyshyvanka vibes Landing Page",
-      imageMob: "/img/my-projects/mobile/foto-6-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-6-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-6-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-6-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-6-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-6-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "chego jewelry website",
-      imageMob: "/img/my-projects/mobile/foto-7-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-7-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-7-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-7-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-7-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-7-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "energy flow webservice",
-      imageMob: "/img/my-projects/mobile/foto-8-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-8-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-8-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-8-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-8-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-8-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "fruitbox online store",
-      imageMob: "/img/my-projects/mobile/foto-9-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-9-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-9-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-9-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-9-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-9-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
-    {
-      title: "starlight studio landing page",
-      imageMob: "/img/my-projects/mobile/foto-10-mob-1x.jpg",
-      imageMob2x: "/img/my-projects/mobile/foto-10-mob-2x.jpg",
-      imageTab: "/img/my-projects/tablet/foto-10-tab-1x.jpg",
-      imageTab2x: "/img/my-projects/tablet/foto-10-tab-2x.jpg",
-      imagePc: "/img/my-projects/pc/foto-10-pc-1x.jpg",
-      imagePc2x: "/img/my-projects/pc/foto-10-pc-2x.jpg",
-      techStack: "React, JavaScript, Node JS, Git",
-      link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
-    },
+	{
+		title: "Wallet webservice",
+		imageMob: "/img/my-projects/mobile/foto-1-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-1-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-1-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-1-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-1-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-1-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "Green harvest webservice",
+		imageMob: "/img/my-projects/mobile/foto-2-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-2-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-2-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-2-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-2-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-2-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/2",
+	},
+	{
+		title: "English Exellence website",
+		imageMob: "/img/my-projects/mobile/foto-3-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-3-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-3-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-3-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-3-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-3-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "power pulse webservice",
+		imageMob: "/img/my-projects/mobile/foto-4-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-4-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-4-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-4-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-4-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-4-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "mimino website",
+		imageMob: "/img/my-projects/mobile/foto-5-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-5-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-5-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-5-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-5-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-5-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "vyshyvanka vibes Landing Page",
+		imageMob: "/img/my-projects/mobile/foto-6-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-6-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-6-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-6-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-6-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-6-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "chego jewelry website",
+		imageMob: "/img/my-projects/mobile/foto-7-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-7-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-7-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-7-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-7-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-7-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "energy flow webservice",
+		imageMob: "/img/my-projects/mobile/foto-8-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-8-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-8-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-8-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-8-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-8-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "fruitbox online store",
+		imageMob: "/img/my-projects/mobile/foto-9-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-9-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-9-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-9-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-9-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-9-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
+	{
+		title: "starlight studio landing page",
+		imageMob: "/img/my-projects/mobile/foto-10-mob-1x.jpg",
+		imageMob2x: "/img/my-projects/mobile/foto-10-mob-2x.jpg",
+		imageTab: "/img/my-projects/tablet/foto-10-tab-1x.jpg",
+		imageTab2x: "/img/my-projects/tablet/foto-10-tab-2x.jpg",
+		imagePc: "/img/my-projects/pc/foto-10-pc-1x.jpg",
+		imagePc2x: "/img/my-projects/pc/foto-10-pc-2x.jpg",
+		techStack: "React, JavaScript, Node JS, Git",
+		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
+	},
 ];
 
 let currentIndex = 0;
@@ -117,12 +117,12 @@ const projectsPerPage = 3;
 
 
 function loadProjects() {
-const projectsList = document.querySelector(".my-projects-list");;
-const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
+	const projectsList = document.querySelector(".my-projects-list");;
+	const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
 
-let projectsHTML = remainingProjects.map((project) => {
-  return `
+	let projectsHTML = remainingProjects.map((project) => {
+		return `
     <li class="my-project-item">
       <div class="my-projects-box-image">
       <picture>
@@ -142,16 +142,16 @@ let projectsHTML = remainingProjects.map((project) => {
         </a>
       </div>
     </li>`
-  ;
-}).join(''); 
+			;
+	}).join('');
 
-projectsList.innerHTML += projectsHTML;
+	projectsList.innerHTML += projectsHTML;
 
-currentIndex += projectsPerPage;
+	currentIndex += projectsPerPage;
 
-if (currentIndex >= projects.length) {
-  document.querySelector(".load-more-btn").style.display = "none";
-}
+	if (currentIndex >= projects.length) {
+		document.querySelector(".load-more-btn").style.display = "none";
+	}
 
 }
 
