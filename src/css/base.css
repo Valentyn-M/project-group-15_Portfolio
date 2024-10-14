@@ -38,6 +38,10 @@
 	overflow: hidden;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-weight: 300;
 	font-size: 16px;
@@ -99,6 +103,6 @@ html._dark {
 	color: #f0f0f0;
 	font-family: "Poppins", sans-serif;
 	position: fixed;
-	bottom: 20px;
+	top: 20px;
 	right: 20px;
 }
