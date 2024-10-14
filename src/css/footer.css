@@ -11,7 +11,7 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 24px;
 	justify-content: space-between;
 }
 
@@ -57,6 +57,12 @@
 
 .social-list li a:hover {
 	color: #00B068;
+	transition: color 0.3s ease;
+}
+
+.social-list li a:focus {
+	color: #00B068;
+	transition: color 0.3s ease;
 }
 
 .copyright {
@@ -85,7 +91,7 @@
 }
 
 ._dark .footer .logo::after {
-	color: #00B068;
+	color: #14c57c;
 }
 
 ._dark .social-list li a {
@@ -93,7 +99,13 @@
 }
 
 ._dark .social-list li a:hover {
-	color: #00B068;
+	color: #14c57c;
+	transition: color 0.3s ease;
+}
+
+._dark .social-list li a:focus {
+	color: #14c57c;
+	transition: color 0.3s ease;
 }
 
 ._dark .copyright {
@@ -110,7 +122,7 @@
 		padding-right: 32px;
 		padding-left: 32px;
 		padding-top: 40px;
-		padding-bottom: 20px;
+		padding-bottom: 24px;
 
 	}
 
@@ -152,7 +164,7 @@
 		padding-left: 32px;
 		padding-right: 32px;
 		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-bottom: 24px;
 	}
 
 	.footer .logo {
