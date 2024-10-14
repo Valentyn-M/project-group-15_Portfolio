@@ -6,7 +6,7 @@
 			url('/img/hero/tablet/bg-tab-down.png');
 	background-repeat: no-repeat, no-repeat;
 	background-size: 351px 264px, 169px 131px;
-	background-position: top, right top 527px;
+	background-position: top right, right 20px bottom 105px;
 	backdrop-filter: blur(6px);
 		
 }
@@ -99,7 +99,11 @@
 	letter-spacing: 0.03em;
 	transition: color 0.3s ease 0s;
 }
-
+.hero-links-item:hover,
+.hero-links-item:focus {
+	color: #00B068;
+	transition: color 0.3s ease 0s;
+}
 @media only screen and (min-width: 768px) {
 	.hero-container {
 		max-width: 768px;
@@ -107,8 +111,8 @@
 		background-image: url('/img/hero/tablet/bg-tab-up.png'),
 					url('/img/hero/tablet/bg-tab-down.png');
 		background-repeat: no-repeat, no-repeat;
-		background-position: top right,
-					right 190px bottom 60px;
+		background-position: top right 20px,
+					right 173px bottom 60px;
 		backdrop-filter: blur(6px);
 		background-size: 356px 276px, 356px 276px;
 			
@@ -156,9 +160,10 @@
 			background-image: url('/img/hero/pc/bg-pc-up.png'),
 					url('/img/hero/pc/bg-pc-down.png');
 				background-repeat: no-repeat, no-repeat;
-				background-position: top right,
-					top 590px left 180px;
+				background-position: top right 20px,
+					bottom 36px left 180px;
 				backdrop-filter: blur(6px);
+				background-size: 356px 276px, 356px 276px;
 			
 		}
 				@media (-webkit-min-device-pixel-ratio: 2),
@@ -213,4 +218,9 @@ html._dark .hero-reference:hover::after {
 }
 html._dark .hero-links {
 	background-color: #2A2D32;
+}
+html._dark .hero-links-item:hover,
+.hero-links-item:focus {
+	color: #14C57C;
+	transition: color 0.3s ease 0s;
 }
