@@ -8,3 +8,6 @@ new Accordion('.accordion-container', {
     console.log(currentElement);
   },
 });
+
+const acc = document.querySelector('.accordion-container');
+// let btn =
