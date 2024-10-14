@@ -38,6 +38,10 @@
 	overflow: hidden;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-weight: 300;
 	font-size: 16px;
@@ -59,20 +63,17 @@ html._dark body {
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
-	margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
 	.main {
 		gap: 124px;
-		margin-bottom: 124px;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	.main {
 		gap: 164px;
-		margin-bottom: 164px;
 	}
 }
 
