@@ -1,6 +1,6 @@
 .tech-skills-container {
   padding: 0;
-  overflow: hidden; /* ховає елементи, які виходять за межі контейнера */
+  overflow: hidden; /*ховає елементи, які виходять за межі контейнера*/
   white-space: nowrap; /* не дозволяє переносити елементи на новий рядок */
   font-weight: 500;
   font-size: 36px;
@@ -10,13 +10,13 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   display: flex;
   flex-direction: column;
-  /* height: 280px; */
+  height: 280px;
 }
 
 .linear {
   padding: 40px 0px;
   width: 100%;
-  height: 100%;
+  height: 128px;
   background-color: #bcdfd1;
   position: relative;
   z-index: 2;
@@ -27,14 +27,14 @@
   margin-left: 16px;
 }
 
-.tech-skills-marquee {
+.tech-skills-marquee-linear {
   display: flex;
   flex-shrink: 0;
   white-space: nowrap;
-  animation: marquee 10s linear infinite;
+  animation: marquee-linear 8s linear infinite;
 }
 
-@keyframes marquee {
+@keyframes marquee-linear {
   0% {
     transform: translateX(0); /* Початок з початкової точки */
   }
@@ -44,13 +44,20 @@
   }
 }
 
-.tech-skills-marquee:hover {
+.tech-skills-marquee-linear:hover {
   animation-play-state: paused;
+}
+
+.tech-skills-marquee-rotate {
+  display: flex;
+  flex-shrink: 0;
+  white-space: nowrap;
+  animation: marquee-rotate 17s linear infinite;
 }
 
 .rotate {
   padding: 40px 0px;
-  width: 110%;
+  width: 105%;
   height: 128px;
   background-color: #e4e5e6;
   display: flex;
@@ -60,6 +67,22 @@
   z-index: 1;
   transition: background-color 0.3s ease;
   margin-left: -10px;
+}
+
+@keyframes marquee-rotate {
+  0% {
+    transform: translateX(0);
+    /* Початок з початкової точки */
+  }
+
+  100% {
+    transform: translateX(-50%);
+    /* Зміщення на половину ширини для плавного циклу */
+  }
+}
+
+.tech-skills-marquee-rotate:hover {
+  animation-play-state: paused;
 }
 
 .tech-skills-list {
