@@ -1,4 +1,4 @@
-const basePath = window.location.hostname === 'localhost' ? '' : '/project-group-15_Portfolio';
+const basePath = window.location.hostname === 'localhost' ? '' : '/project-group-15_Portfolio/assets';
 
 
 const projects = [
