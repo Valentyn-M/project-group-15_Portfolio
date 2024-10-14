@@ -1,5 +1,35 @@
-<section class="reviews">
-	<div class="reviews-container">
-		Reviews
-	</div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reviews Slider</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="reviews">
+      <div class="reviews-container">
+        <h2 id="reviewsHead">REVIEWS</h2>
+
+        <div class="swiper">
+          <ul class="swiper-wrapper" id="reviewsWrap"></ul>
+        </div>
+
+        <div class="buttons">
+          <div class="swiper-button-prev">
+            <svg width="24" height="24">
+              <use xlink:href="../img/icons.svg#icon-arrow-narrow-slider"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg width="24" height="24">
+              <use xlink:href="../img/icons.svg#icon-arrow-narrow-slider"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="../js/reviews.js"></script>
+  </body>
+</html>
