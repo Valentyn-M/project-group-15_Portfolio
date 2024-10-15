@@ -1,20 +1,31 @@
 import iziToast from 'izitoast';
 
-const basePath = '/project-group-15_Portfolio/';
-const pathImg = `${basePath}img/my-projects`;
-
+// import pathImages from "../img/my-projects";
 import iconArrow from "../img/icons.svg";
 
 const imagePath = '../img/my-projects/';
+
+import imageMob from '../img/my-projects/mobile/foto-1-mob-1x.jpg';
+import imageMob2x from '../img/my-projects/mobile/foto-1-mob-2x.jpg';
+import imageTab from '../img/my-projects/pc/foto-1-pc-1x.jpg';
+import imageTab2x from '../img/my-projects/pc/foto-1-pc-2x.jpg';
+import imagePc from '../img/my-projects/pc/foto-1-pc-1x.jpg';
+import imagePc2x from '../img/my-projects/pc/foto-1-pc-2x.jpg';
 const projects = [
 	{
 		title: "Wallet webservice",
-		imageMob: `${pathImg}/mobile/foto-1-mob-1x.jpg"`,
-		imageMob2x: `${pathImg}/mobile/foto-1-mob-2x.jpg"`,
-		imageTab: `${pathImg}/pc/foto-1-pc-1x.jpg`,
-		imageTab2x: `${pathImg}/pc/foto-1-pc-1x.jpg`,
-		imagePc: `${pathImg}/pc/foto-1-pc-1x.jpg`,
-		imagePc2x: `${pathImg}/pc/foto-1-pc-2x.jpg`,
+		imageMob: imageMob,
+		imageMob2x: imageMob2x,
+		imageTab: imageTab,
+		imageTab2x: imageTab2x,
+		imagePc: imagePc,
+		imagePc2x: imagePc2x,
+		// imageMob: `${pathImages}/mobile/foto-1-mob-1x.jpg"`,
+		// imageMob2x: `${pathImages}/mobile/foto-1-mob-2x.jpg"`,
+		// imageTab: `${pathImages}/pc/foto-1-pc-1x.jpg`,
+		// imageTab2x: `${pathImages}/pc/foto-1-pc-1x.jpg`,
+		// imagePc: `${pathImages}/pc/foto-1-pc-1x.jpg`,
+		// imagePc2x: `${pathImages}/pc/foto-1-pc-2x.jpg`,
 		techStack: "React, JavaScript, Node JS, Git",
 		link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
 	},
