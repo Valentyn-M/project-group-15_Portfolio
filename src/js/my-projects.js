@@ -1,9 +1,7 @@
 import iziToast from 'izitoast';
 
-// import pathImages from "../img/my-projects";
 import iconArrow from "../img/icons.svg";
 
-const imagePath = '../img/my-projects/';
 
 import imageMob from '../img/my-projects/mobile/foto-1-mob-1x.jpg';
 import imageMob2x from '../img/my-projects/mobile/foto-1-mob-2x.jpg';
