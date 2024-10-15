@@ -6,129 +6,103 @@
 	<link rel="icon" type="image/svg+xml" href="/project-group-15_Portfolio/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Portfolio</title>
+	<script async src="./js/switch-theme.js"></script>
   <script type="module" crossorigin src="/project-group-15_Portfolio/index.js"></script>
   <link rel="modulepreload" crossorigin href="/project-group-15_Portfolio/assets/vendor-CVDniW-J.js">
   <link rel="stylesheet" crossorigin href="/project-group-15_Portfolio/assets/vendor-BW9ya9RB.css">
-  <link rel="stylesheet" crossorigin href="/project-group-15_Portfolio/assets/index-CqQr7F2H.css">
+  <link rel="stylesheet" crossorigin href="/project-group-15_Portfolio/assets/index-ww5wgBb9.css">
 </head>
 
 <body>
 
 	<header class="header">
-  <div class="header-container">
-    <a href="../index.html">
-      <p class="name">Lloyd<span>Jefferson.</span></p>
-    </a>
-    <nav class="navbar">
-      <div class="button-set">
-        <div class="toggle-switch">
-          <input
-            type="checkbox"
-            id="theme-toggle"
-            class="theme-toggle-checkbox"
-          />
-          <label for="theme-toggle" class="slider-wrapper" id="toggleLabel">
-            <svg
-              class="icon-light"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="24"
-              viewBox="0 0 48 24"
-              fill="none"
-            >
-              <rect width="48" height="24" rx="12" fill="#E4E5E6" />
-              <circle cx="12" cy="12" r="10" fill="#00B068" />
-            </svg>
-            <svg
-              class="icon-dark"
-              xmlns="http://www.w3.org/2000/svg"
-              width="48"
-              height="24"
-              viewBox="0 0 48 24"
-              fill="none"
-            >
-              <rect width="48" height="24" rx="12" fill="#292929" />
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M32 21.1679C35.5318 19.6248 38 16.1006 38 12C38 7.89936 35.5318 4.3752 32 2.83209C33.2249 2.29689 34.5778 2 36 2C41.5228 2 46 6.47715 46 12C46 17.5228 41.5228 22 36 22C34.5778 22 33.2249 21.7031 32 21.1679Z"
-                fill="#00B068"
-              /></svg
-          ></label>
-        </div>
+	<div class="header-container">
+		<a href="../index.html">
+			<p class="name">Lloyd<span>Jefferson.</span></p>
+		</a>
+		<nav class="navbar">
+			<div class="button-set">
+				<div class="toggle-switch">
+					<input type="checkbox" id="theme-toggle" class="theme-toggle-checkbox" />
+					<label for="theme-toggle" class="slider-wrapper" id="toggleLabel">
+						<span class="visually-hidden">Toggle Theme</span>
+						<svg class="icon-light" xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 48 24"
+							fill="none">
+							<rect width="48" height="24" rx="12" fill="#E4E5E6" />
+							<circle cx="12" cy="12" r="10" fill="#00B068" />
+						</svg>
+						<svg class="icon-dark" xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 48 24"
+							fill="none">
+							<rect width="48" height="24" rx="12" fill="#292929" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M32 21.1679C35.5318 19.6248 38 16.1006 38 12C38 7.89936 35.5318 4.3752 32 2.83209C33.2249 2.29689 34.5778 2 36 2C41.5228 2 46 6.47715 46 12C46 17.5228 41.5228 22 36 22C34.5778 22 33.2249 21.7031 32 21.1679Z"
+								fill="#00B068" />
+						</svg>
+					</label>
+				</div>
 
-        <button class="burger" type="button"></button>
-      </div>
+				<button class="burger" type="button"></button>
+			</div>
 
-      <div class="mobile-menu">
-        <ul class="mobile-nav-list">
-          <li><a href="#about-me">About me</a></li>
-          <li><a href="#my-projects">Projects</a></li>
-          <li><a href="#work-together">Contacts</a></li>
-        </ul>
-      </div>
+			<div class="mobile-menu">
+				<ul class="mobile-nav-list">
+					<li><a href="#about-me">About me</a></li>
+					<li><a href="#my-projects">Projects</a></li>
+					<li><a href="#work-together">Contacts</a></li>
+				</ul>
+			</div>
 
-      <ul class="nav-list">
-        <li><a href="#about-me">About me</a></li>
-        <li><a href="#my-projects">Projects</a></li>
-        <li><a href="#work-together">Contacts</a></li>
-      </ul>
-    </nav>
-  </div>
+			<ul class="nav-list">
+				<li><a href="#about-me">About me</a></li>
+				<li><a href="#my-projects">Projects</a></li>
+				<li><a href="#work-together">Contacts</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
-
 	<main class="main">
 		<section class="hero" id="hero">
-  <div class="hero-container">
-    <h1 class="hero-title">
-      Hello, I am
-      <picture>
-        <source
-          srcset="data:image/jpeg;base64,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 1x, /project-group-15_Portfolio/assets/hero-img2x-BFjl7R8N.jpg 2x"
-          media="(min-width: 1280px)"
-        />
-        <img
-          class="hero-img"
-          src="data:image/jpeg;base64,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"
-          alt="LLoyd Jefferson"
-          width="108"
-          height="108"
-        />
-      </picture>
-	  <span class="hero-subtitle brand-color">Fullstack developer</span>
-    </h1>
-    <div class="hero-description">
-      <a href="#work-together" class="hero-reference">
-        <svg class="hero-arrow">
-          <use href="/project-group-15_Portfolio/assets/icons-CBMYlWGZ.svg#icon-arrow-long"></use>
-        </svg>
-        <p class="hero-reference-text">Order the project</p>
-      </a>
+	<div class="hero-container">
+		<h1 class="hero-title">
+			Hello, I am
+			<picture>
+				<source srcset="data:image/jpeg;base64,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 1x, /project-group-15_Portfolio/assets/hero-img2x-BFjl7R8N.jpg 2x" media="(min-width: 1280px)" />
+				<img class="hero-img" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIAGwAbAMBIgACEQEDEQH/xAA0AAABBQEBAQAAAAAAAAAAAAAFAQIDBAYHAAgBAAEFAQAAAAAAAAAAAAAAAAMAAQIEBQb/2gAMAwEAAhADEAAAAOl8XWiDOR3iQZDnSS1egFepTGrqtG4fKVyrKtte+/JnQZ2MZ6Xw6vi4m9T31zm3uh3eRy9vA2avIbFqqfNNpK2WAzzkSJeeiihoMVFf6hWEV26Oxz01gE0DygKVXSRWICcy1FRIokiJm6rKvYvX6FNwOrj4r3HlSJVp1yss6eKaI3Nxo5E5hrmpRuRUxPoXNOg1uiI8zOYYG2D0gM9c52GGWAmGxFYnNekenrP1+4mfB9EIjH1qHKet8vBo5C2+OEVZoPHwc5GUrNS7iT0NCzq05Kl+U/VZXs+UDbgaC3yrRa+V1lyY4+SuP2l6w4//xAAyEAACAQMDAwIEBAYDAAAAAAABAgMABBEFEiExQVEGExAgIjIUUmFxI0JTgZGhYnKx/9oACAEBAAE/APV3qsaKq2tsFe9dc88iIeTV5qeo6hIXu7uWUn8x4/sOgrFBc8U1tJgMQApNSWrxoW6/tSuGzxTCsHPwxSsyEMrEEdwcGvTnrvVtJmjjupnurToyOcuo8q1Wdzb3drDc28geKVQyN5BrVLx7/Ubu7kOTLKzfsOw+ABJxUNuFiLvx0I84qd5VnK7swb2BYdN2M0ZXeN0WPbHwXb/rmosRI8iA+4wbv9oqxlF/GLZDtuAT9ROKkumhmKSZPg1FIsq5U1isVivTPrSbRtNNmQGUSsyZ7BqIrbUIIljI67hWobvZwE4f8vONtRS28NhP4X6wSO7j7RU+pXbpLAFzGW5A7gikt7t8KgbrwCKbSr+HbOoKsKkufdbE4+tc7q01m9+RQcgDrWPlxS8EGss80bbWI2jIzjOTjmk9MXF3Ed8bKp5wD4qH0bhQWIT/AGat9BtLdOF3N5NarEiErgVqdmpklOMMDWkj+NIMdqK1isfDHx0mSI3CiWMGvx1jaqqzXEaHaDtJ+r/FT+odMAHExB7iF8f+VeeodMghM34qPaQcDcM8VP6kmv3ka2gURr/O9XN/cPM7PErE+DWmyRxmRG4Znplo/HFYrFadpF1qQkEEoTaRnDbWIPitNtnWO6VFAl93cxI5JYAgmrmx1K4uox+IwgHQIevkkmtY0i3u9P1a/kG/6ykHjEahd4/citFW1aUQ3JiTP9TpkdxmtTt7S3f+FKspPdMEf6qPPvragckg5/vmmo/N6VvEgvJIicNMuEJ6bhVtaQscyhhKi7WZWKEjqM7SKntrVr9IthkyCcSOzqAO+GJrX7yFdMuIIoC5+0AY6mhczwXURaEps6ir/UY7tUZP0BFWURM0kuOM4zRo/MjMjBlOGByCK0bWZdQMnvKokVFHH82Kv/x0Esslra/iHcqzDOCI+nH7eKm0iMqzm+jVhhhkDg16g08hrnbeNJLvG1sYGO5qeFIYbYbju4JPnFaeM2qt+Yk0wo/IaNCtLupba7Ro+S30485qx1KOZkc8EfTWq5EW9Y8p3IbFay0Nwm2IESluSfFakC01vAnYUiCONUHQKBTU1H5DS1btsnif8rqf8GtT0uaOZ7u1UkNy6Dz5FXmryexIjEgqOn61c3pZOh3Z480kZEu5zlz/AKFZyoP6U1Gj8mKVSSABkmtP9L3k2yW5DQxk8A/caBwBV5YWdyre5CjNjuK1uzsobsewgAAycVtJkZqEuwYPIpJFlTcucZI5GORRo0aZCrFSMEHBqKCadwkUbOx7KMmtP9IXs7Brs+wnjq5rTdC0ywlUxQZcD73+o1LHuQqOqnIong08gCsc4IrVrZpLpyDnJqSPDEDtSxlugPWrfS2WNEI6nLVLorvu2cN4qTTbqMZ2bh+lR2dzKCUiJAODV16NsG1G4uZGcxyyF1jHAGagsLa1XZbxJGv/ABFE7TilBBBonkNU8G87k4buOxrUWeJR2J7GorISwzTHspNRafNLG7CMlmbgVpXp5oQZZ/vPRfy1JHGJDHGMgdf1qK3jdQR+4NNY5faEyT2ArS9GtrKyEcsKNK7F2yM4zRAIwauo1iY7SaQ5nUeRQH0mj1rqtTJHKpSRFZfBGaNvDCskcaAIRyKt4Y1XKqBnxVyNsWB4qcBJ4mHUnFacoYlT0zVtZ28Sq4XL46nt8P/EACERAAICAgICAwEAAAAAAAAAAAECABEDIRIxECAEIkFR/9oACAECAQE/AGYkzI4RbMbPk1VCDIwF9gdxWsA+Fb++PldoYinvgSZzcdgReNa9MyBkIgc1qUDd2aikVoepNfUCzyqANf2C7iAfnrmV1IyJuuxGzPkcFbqY9AD0GNjCvEzIF0QBLMCmUYAB+eCAY2Ik9xMIXZ3B4//EACYRAAIBAwIHAQADAAAAAAAAAAECAwARIQQFEBITIjFBUSAycZH/2gAIAQMBAT8AklZ2OcVp4HnkCrUW06Zf53Y1JtkLHtPKT4FT6Z4WPtR74QzWwxxw2Qqests4NOUGOoBXJG17E1rLiKS/z8bbI6aqPlvY3uKMSc2SaPayhff2tTCHDI74844X4QymKRXHo1C4lHUDdrLcU3JbsYkjPitymZIT9ay/6PztEiPFJDIffaf7pYwkZVjW73PTPq5/CaaRsnArTRpGhC+fdQliCCTap4ElQo4uKl0JBJja4+GmR1NmUilRFOFFGgSpuKTUALYg3qXUlu1RYUfFE3r/2Q==" alt="LLoyd Jefferson" width="108" height="108"
+					loading="lazy" />
+			</picture>
+			<span class="hero-subtitle brand-color">Fullstack developer</span>
+		</h1>
+		<div class="hero-description">
+			<a href="#work-together" class="hero-reference">
+				<svg class="hero-arrow">
+					<use href="/project-group-15_Portfolio/assets/icons-CBMYlWGZ.svg#icon-arrow-long"></use>
+				</svg>
+				<p class="hero-reference-text">Order the project</p>
+			</a>
 
-      <p class="hero-text">
-        I work with people all over the world to create
-        <span class="brand-color">impressive</span> and
-        <span class="brand-color">functional websites</span> that reflect each
-        client’s unique personality.
-      </p>
-    </div>
-  </div>
-  <ul class="hero-links">
-    <li class="hero-links-item"><a href="https://www.instagram.com/goitclub/" target="_blank" rel="nooper noreferrer">Instagram</a></li>
-    <li class="hero-links-item"><a href="https://www.facebook.com/goITclub/" target="_blank" rel="nooper noreferrer">Facebook</a></li>
-    <li class="hero-links-item">
-      <a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank" rel="nooper noreferrer"
-        >Linkedin</a
-      >
-    </li>
-    <li class="hero-links-item">
-      <a href="https://github.com/Valentyn-M/project-group-15_Portfolio" target="_blank" rel="nooper noreferrer"
-        >GitHub</a
-      >
-    </li>
-  </ul>
+			<p class="hero-text">
+				I work with people all over the world to create
+				<span class="brand-color">impressive</span> and
+				<span class="brand-color">functional websites</span> that reflect each
+				client’s unique personality.
+			</p>
+		</div>
+	</div>
+	<ul class="hero-links">
+		<li class="hero-links-item"><a href="https://www.instagram.com/goitclub/" target="_blank"
+				rel="nooper noreferrer">Instagram</a></li>
+		<li class="hero-links-item"><a href="https://www.facebook.com/goITclub/" target="_blank"
+				rel="nooper noreferrer">Facebook</a></li>
+		<li class="hero-links-item">
+			<a href="https://www.linkedin.com/school/goit-start-your-career-in-it" target="_blank"
+				rel="nooper noreferrer">Linkedin</a>
+		</li>
+		<li class="hero-links-item">
+			<a href="https://github.com/Valentyn-M/project-group-15_Portfolio" target="_blank"
+				rel="nooper noreferrer">GitHub</a>
+		</li>
+	</ul>
 </section>
-
 		<section class="about-me" id="about-me">
 	<div class="about-me-container">
 		<h2 class="about-title">About <span class="brand-color">me</span></h2>
@@ -140,7 +114,7 @@
 						<source srcset="/project-group-15_Portfolio/assets/img-about-tab-1x-BtWW9UUp.jpg 1x, /project-group-15_Portfolio/assets/img-about-tab-2x-C4l0qS1d.jpg 2x
 			`" media="(min-width: 768px) and (max-width: 1279px)" />
 						<source srcset="/project-group-15_Portfolio/assets/img-about-desk-1x-CdAL7nvF.jpg 1x, /project-group-15_Portfolio/assets/img-about-desk-2x-ImBJ9DeI.jpg 2x" media="(min-width: 1280px)" />
-						<img src="/project-group-15_Portfolio/assets/img-about-desk-1x-CdAL7nvF.jpg" alt="Lloyd's photo" />
+						<img src="/project-group-15_Portfolio/assets/img-about-desk-1x-CdAL7nvF.jpg" alt="Lloyd's photo" loading="lazy" />
 					</picture>
 				</div>
 				<div class="bio">
@@ -289,36 +263,6 @@
 		<button class="load-more-btn">Load more</button>
 	</div>
 </section>
-		<!-- <section class="benefits-section">
-	<h1><span>BENEFITS</span> OF WORKING WITH <span>ME</span></h1>
-<ul class="benefits-list">
-	<li class="benefit-item">
-		<div class="icon">💬</div>
-		<h2>COMMUNICATION</h2>
-		<p>Understanding your needs and wants is my priority and I am always available for discussions and open to
-			corrections.</p>
-	</li>
-	<li class="benefit-item">
-		<div class="icon">🖌️</div>
-		<h2>ART</h2>
-		<p>Thanks to my creative nature, I am ready to accept challenges and help you bring your ideas to life.</p>
-	</li>
-	<li class="benefit-item">
-		<div class="icon">👤</div>
-		<h2>EXPERTISE</h2>
-		<p>With extensive experience in development, I have a deep understanding of programming and website development.
-		</p>
-	</li>
-	<li class="benefit-item">
-		<div class="icon">⏳</div>
-		<h2>URGENT EXECUTION</h2>
-		<p>I understand how important time is to you. Ready to work quickly and efficiently, without reducing the
-			quality of work.</p>
-	</li>
-</ul>
-</section>
-
-<script src="./src/js/benefits.js"></script> -->
 		<section class="benefits">
 	<div class="benefits-container">
 		<h2 class="benefits-title"><span class="brand-color">Benefits</span> of working with me</h2>
@@ -571,8 +515,6 @@
 			cooperation. Please stay in touch.</p>
 	</div>
 </div>
-
-	<button type="button" class="switch-theme-test">Switch theme</button>
 
 
 </body>
