@@ -1,5 +1,5 @@
 const htmlElement = document.documentElement;
-const themeButton = document.querySelector('.switch-theme-test');
+const themeButton = document.querySelector("#toggleLabel");
 themeButton.addEventListener("click", () => changeTheme(true));
 
 // Функция смены темы сайта (если функция вызывается по клику, то в аргументу функции будет true)
