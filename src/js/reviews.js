@@ -1,14 +1,18 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
-Swiper.use([Navigation, Pagination]);
+import { Navigation, Keyboard } from 'swiper/modules';
+Swiper.use([Navigation, Keyboard]);
 
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
+import iziToast from 'izitoast';
 const reviewsWrap = document.querySelector('#reviewsWrap');
+const errorReviews = `<div class='reviewError'>Not found!</div>`;
 
 const swiper = new Swiper('.swiper', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -29,9 +33,22 @@ async function getReviews() {
     const response = await axios.get('/reviews');
     return response.data;
   } catch (error) {
-    console.log('Error fetching reviews:', error);
-    alert('Failed to fetch reviews. Please, try again later.');
-    reviewsWrap.insertAdjacentHTML('beforeend', 'Not found');
+    console.log('Error fetching reviews');
+    reviewsWrap.insertAdjacentHTML('beforeend', errorReviews);
+    iziToast.error({
+      class: 'izitoast-error',
+      titleSize: '16px',
+      titleLineHeight: '1.3',
+      message: 'Error fetching reviews:',
+      messageSize: '16px',
+      messageLineHeight: '1.4',
+      close: true,
+      closeOnEscape: true,
+      position: 'topRight',
+      timeout: 10000,
+      animateInside: false,
+      transitionIn: 'bounceInLeft',
+    });
   }
 }
 
