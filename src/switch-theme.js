@@ -58,5 +58,3 @@ function changeTheme(saveTheme = false) {
 	setThemeClass();
 
 }());
-
-window.alert("Dark Theme");
