@@ -30,12 +30,12 @@ gap: 40px;
 }
 
 .my-projects-box-image {
-width: 320px;
+
 overflow: hidden;
 }
 
 .my-projects-image {
-width: 100%;
+width: 320px;
 height: auto;
 margin-bottom: 12px;
 border-radius: 16px;
@@ -131,6 +131,12 @@ gap: 80px;
 gap: 60px;
 }
 
+.my-projects-title {
+    font-size: 108px;
+    letter-spacing: 0.02em;
+    line-height: 1.15;
+}
+
 .my-projects-list{
 gap: 60px;
 }
@@ -146,13 +152,12 @@ align-items: center;
 justify-content: space-between;
 }
 
-.my-projects-box-image {
-width: 704px;    
-}
 .my-projects-image {
+width: 704px; 
 margin-bottom: 16px;
 border-radius: 24px;
 }
+
 .my-projects-image-title {
     font-size: 36px;
     line-height: 1.35;
@@ -181,15 +186,8 @@ margin-bottom: 38px;
 .my-projects-list {
 gap: 80px;
 }
-.my-projects-box-image {
+.my-projects-image {
     width: 1008px;
 }
 
-
-.my-projects-title {
-padding: 30px 0;    
-    font-size: 108px;
-    letter-spacing: 0.02em;
-    line-height: 1.15;
-}
 }
