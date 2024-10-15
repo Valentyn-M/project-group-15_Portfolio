@@ -110,8 +110,11 @@
   display: none !important;
 }
 
-.swiper-button-prev.swiper-button-disabled {
-  display: none !important;
+.swiper-button-disabled {
+  border-color: #e4e5e6;
+}
+.swiper-button-disabled svg {
+  fill: #e4e5e6;
 }
 
 .swiper-container-wrapper {
@@ -176,4 +179,11 @@
 ._dark .swiper-button-next,
 ._dark .swiper-button-prev {
   border-color: #f0f0f0;
+}
+
+._dark .swiper-button-disabled {
+  border-color: #2a2d32;
+}
+._dark .swiper-button-disabled svg {
+  fill: #2a2d32;
 }
