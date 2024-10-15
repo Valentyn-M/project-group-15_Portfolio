@@ -1,10 +1,13 @@
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
-document.addEventListener('DOMContentLoaded', function () {
-  const accordion = new Accordion('.accordion-wrap', {
-    duration: 400,
-    showMultiple: false,
-    openOnInit: [0],
-  });
+new Accordion('.accordion-container', {
+  duration: 400,
+  showMultiple: true,
+  onOpen: function (currentElement) {
+    console.log(currentElement);
+  },
 });
+
+const acc = document.querySelector('.accordion-container');
+// let btn =
