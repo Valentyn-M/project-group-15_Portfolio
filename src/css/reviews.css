@@ -74,7 +74,7 @@
   border-radius: 8px;
   width: 40px !important;
   height: 40px !important;
-  position: relative;
+
   top: auto !important;
   left: auto !important;
   bottom: -24px !important;
@@ -111,7 +111,10 @@
 }
 
 .swiper-button-disabled {
-  display: none !important;
+  border-color: #e4e5e6;
+}
+.swiper-button-disabled svg {
+  fill: #e4e5e6;
 }
 
 .swiper-container-wrapper {
@@ -127,6 +130,14 @@
   right: 40px;
 
   position: absolute;
+}
+.reviewError {
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  text-align: center;
+  margin: 16px 0;
+  width: 100%; /* Ensure the element takes the full width of its container */
 }
 @media (min-width: 768px) {
   #reviewsHead {
@@ -168,4 +179,11 @@
 ._dark .swiper-button-next,
 ._dark .swiper-button-prev {
   border-color: #f0f0f0;
+}
+
+._dark .swiper-button-disabled {
+  border-color: #2a2d32;
+}
+._dark .swiper-button-disabled svg {
+  fill: #2a2d32;
 }

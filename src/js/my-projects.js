@@ -1,5 +1,6 @@
 import iziToast from 'izitoast';
 
+
 import iconArrow from "../img/icons.svg";
 
 const imagePath = '../img/my-projects/';
@@ -114,6 +115,7 @@ const projects = [
 	techStack: "React, JavaScript, Node JS, Git",
 	link: "https://valentyn-m.github.io/project-group-15_Portfolio/",
     },
+
 ];
 
 let currentIndex = 0;
@@ -121,12 +123,11 @@ const projectsPerPage = 3;
 
 
 function loadProjects() {
-const projectsList = document.querySelector(".my-projects-list");;
-const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
+	const projectsList = document.querySelector(".my-projects-list");;
+	const remainingProjects = projects.slice(currentIndex, currentIndex + projectsPerPage);
 
-
-let projectsHTML = remainingProjects.map((project) => {
-    return `
+	let projectsHTML = remainingProjects.map((project) => {
+		return `
     <li class="my-project-item">
         <div class="my-projects-box-image">
         <picture>
@@ -148,9 +149,9 @@ let projectsHTML = remainingProjects.map((project) => {
     </li>`;
 }).join(''); 
 
-projectsList.innerHTML += projectsHTML;
+	projectsList.innerHTML += projectsHTML;
 
-currentIndex += projectsPerPage;
+	currentIndex += projectsPerPage;
 
 if (currentIndex >= projects.length) {
     document.querySelector(".load-more-btn").style.display = "none";
@@ -158,7 +159,8 @@ if (currentIndex >= projects.length) {
 		backgroundColor: 'rgba(0, 176, 104, 1)',
 		title: 'More projects',
 		message: 'GitHub Linkedin Instagram Facebook',
-		position: 'topRight',
+		position: 'bottomCenter',
+		icon: false,
 		timeout: 5000,
 		titleColor: 'rgba(255, 255, 255, 1)',
         titleSize: '16px',
