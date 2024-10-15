@@ -110,7 +110,7 @@
   display: none !important;
 }
 
-.swiper-button-disabled {
+.swiper-button-prev.swiper-button-disabled {
   display: none !important;
 }
 
@@ -127,6 +127,14 @@
   right: 40px;
 
   position: absolute;
+}
+.reviewError {
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  text-align: center;
+  margin: 16px 0;
+  width: 100%; /* Ensure the element takes the full width of its container */
 }
 @media (min-width: 768px) {
   #reviewsHead {
