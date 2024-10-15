@@ -1,7 +1,8 @@
-const htmlElement = document.documentElement;
+// const htmlElement = document.documentElement;
 const themeButton = document.querySelector("#toggleLabel");
 themeButton.addEventListener("click", () => changeTheme(true));
 
+/*
 // Функция смены темы сайта (если функция вызывается по клику, то в аргументу функции будет true)
 function changeTheme(saveTheme = false) {
 
@@ -58,3 +59,4 @@ function changeTheme(saveTheme = false) {
 	setThemeClass();
 
 }());
+*/

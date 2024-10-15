@@ -6,7 +6,49 @@
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Portfolio</title>
-	<script async src="/project-group-15_Portfolio/switch-theme.js"></script>
+	<script>
+		const htmlElement = document.documentElement;
+		// Script for changing the site theme (it should work before loading the style file)
+		function changeTheme(saveTheme = false) {
+			let currentTheme = htmlElement.classList.contains('_light') ? 'light' : 'dark';
+			let newTheme;
+			let newDataColorScheme;
+			if (currentTheme === 'light') {
+				newTheme = 'dark';
+				newDataColorScheme = 'dark';
+			} else {
+				newTheme = 'light';
+				newDataColorScheme = 'light';
+			}
+			htmlElement.classList.remove(`_${currentTheme}`);
+			htmlElement.classList.add(`_${newTheme}`);
+			themeButton.blur();
+			htmlElement.setAttribute("data-color-scheme", newDataColorScheme);
+			saveTheme ? localStorage.setItem('theme', newTheme) : null;
+		}
+
+		(function () {
+			const saveUserTheme = localStorage.getItem('theme');
+			let userTheme;
+			if (window.matchMedia) {
+				userTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+			}
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener("change", e => {
+				!saveUserTheme ? changeTheme() : null;
+			});
+
+			function setThemeClass() {
+				if (saveUserTheme) {
+					htmlElement.classList.add(`_${saveUserTheme}`);
+					htmlElement.setAttribute("data-color-scheme", saveUserTheme);
+				} else {
+					htmlElement.classList.add(`_${userTheme}`);
+					htmlElement.setAttribute("data-color-scheme", userTheme);
+				}
+			}
+			setThemeClass();
+		}());
+	</script>
 	<link rel="stylesheet" href="./css/styles.css" />
 </head>
 
