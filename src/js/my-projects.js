@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 
-const pathImg = new URL('../img/my-projects', import.meta.url).href; // Це автоматично створить коректний шлях до зображень під час складання та публікації на GitHub Pages
+const basePath = '/project-group-15_Portfolio/';
+const pathImg = `${basePath}img/my-projects`;
 
 import iconArrow from "../img/icons.svg";
 
