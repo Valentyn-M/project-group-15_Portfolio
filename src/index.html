@@ -9,24 +9,6 @@
 	<script>
 		const htmlElement = document.documentElement;
 		// Script for changing the site theme (it should work before loading the style file)
-		function changeTheme(saveTheme = false) {
-			let currentTheme = htmlElement.classList.contains('_light') ? 'light' : 'dark';
-			let newTheme;
-			let newDataColorScheme;
-			if (currentTheme === 'light') {
-				newTheme = 'dark';
-				newDataColorScheme = 'dark';
-			} else {
-				newTheme = 'light';
-				newDataColorScheme = 'light';
-			}
-			htmlElement.classList.remove(`_${currentTheme}`);
-			htmlElement.classList.add(`_${newTheme}`);
-			themeButton.blur();
-			htmlElement.setAttribute("data-color-scheme", newDataColorScheme);
-			saveTheme ? localStorage.setItem('theme', newTheme) : null;
-		}
-
 		(function () {
 			const saveUserTheme = localStorage.getItem('theme');
 			let userTheme;
