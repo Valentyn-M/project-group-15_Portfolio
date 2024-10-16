@@ -63,17 +63,20 @@ html._dark body {
 	display: flex;
 	flex-direction: column;
 	gap: 80px;
+	margin-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
 	.main {
 		gap: 124px;
+		margin-bottom: 124px;
 	}
 }
 
 @media only screen and (min-width: 1280px) {
 	.main {
 		gap: 164px;
+		margin-bottom: 164px;
 	}
 }
 
@@ -86,23 +89,4 @@ html._dark {
 	.brand-color {
 		color: #14c57c;
 	}
-}
-
-/* Temporary button to switch theme */
-.switch-theme-test {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 8px;
-	padding: 12px 24px;
-	background: #00b068;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 1.5;
-	letter-spacing: 0.03em;
-	color: #f0f0f0;
-	font-family: "Poppins", sans-serif;
-	position: fixed;
-	top: 20px;
-	right: 20px;
 }

@@ -53,7 +53,7 @@
 
 .mobile-menu {
 	position: fixed;
-	top: 39px;
+	top: 72px;
 	right: 0;
 	width: 100%;
 	background: #f0f0f0;
@@ -65,7 +65,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	transition: transform 0.6s ease, opacity 0.8s ease;
+	transition: transform 0.4s ease, opacity 0.3s ease;
 }
 
 .mobile-menu.active {
@@ -130,18 +130,23 @@
 .icon-light,
 .icon-dark {
 	position: absolute;
+	opacity: 0;
 	transition: opacity 0.3s ease;
 }
 
-.icon-dark {
+html._light .icon-dark {
+	opacity: 1;
+}
+
+html._light .icon-light {
 	opacity: 0;
 }
 
-input[type='checkbox']:checked+.slider-wrapper .icon-light {
+html._dark .icon-dark {
 	opacity: 0;
 }
 
-input[type='checkbox']:checked+.slider-wrapper .icon-dark {
+html._dark .icon-light {
 	opacity: 1;
 }
 
