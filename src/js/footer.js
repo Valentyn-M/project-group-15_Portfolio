@@ -18,3 +18,17 @@ document.addEventListener('DOMContentLoaded', function () {
         copyright.classList.add('visible');
     }, 1500);
 });
+
+
+window.addEventListener('scroll', function () {
+    const footer = document.querySelector('.footer');
+    const socialLinks = document.querySelector('.social-list');
+    const footerPosition = footer.getBoundingClientRect().top;
+    const screenHeight = window.innerHeight;
+
+    if (footerPosition < screenHeight) {
+        socialLinks.classList.add('animate-colors');
+    } else {
+        socialLinks.classList.remove('animate-colors');
+    }
+});
