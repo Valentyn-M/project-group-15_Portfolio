@@ -130,18 +130,23 @@
 .icon-light,
 .icon-dark {
 	position: absolute;
+	opacity: 0;
 	transition: opacity 0.3s ease;
 }
 
-.icon-dark {
+html._light .icon-dark {
+	opacity: 1;
+}
+
+html._light .icon-light {
 	opacity: 0;
 }
 
-input[type='checkbox']:checked+.slider-wrapper .icon-light {
+html._dark .icon-dark {
 	opacity: 0;
 }
 
-input[type='checkbox']:checked+.slider-wrapper .icon-dark {
+html._dark .icon-light {
 	opacity: 1;
 }
 
