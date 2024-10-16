@@ -154,12 +154,20 @@
 
 	.footer {
 		height: 160px;
+
+	}
+
+	.logo-list {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.footer-container {
+
 		height: 100%;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: space-between;
 		padding-left: 32px;
 		padding-right: 32px;
@@ -185,7 +193,7 @@
 		text-align: left;
 		right: 32px;
 		left: unset;
-		align-self: flex-start;
+		align-self: flex-end;
 		margin-top: auto;
 	}
 
@@ -226,4 +234,30 @@
 
 .footer p {
 	transition-delay: 1s;
+}
+
+@keyframes color-change {
+	0% {
+		color: #292929;
+	}
+
+	25% {
+		color: #00B068;
+	}
+
+	50% {
+		color: #ff6347;
+	}
+
+	75% {
+		color: #1e90ff;
+	}
+
+	100% {
+		color: #292929;
+	}
+}
+
+.animate-colors a {
+	animation: color-change 5s;
 }
