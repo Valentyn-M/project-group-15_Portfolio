@@ -27,7 +27,7 @@ const swiper = new Swiper('.swiper', {
 });
 
 import axios from 'axios';
-axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/apis';
+axios.defaults.baseURL = 'https://portfolio-js.b.goit.study/api';
 
 async function getReviews() {
   try {
