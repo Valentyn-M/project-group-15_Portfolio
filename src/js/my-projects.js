@@ -218,17 +218,6 @@ function loadProjects() {
 	}).join('');
 
 	projectsList.innerHTML += projectsHTML;
-
-	const galleryMyProjectEl = document.querySelector(".my-project-item");
-	if (galleryMyProjectEl) {
-		const cardHeight = galleryMyProjectEl.getBoundingClientRect().height;
-		
-		window.scrollBy({
-			top: cardHeight * 0.8,
-			behavior: 'smooth',
-		});
-	}
-
 	currentIndex += projectsPerPage;
 
 	if (currentIndex >= projects.length) {
