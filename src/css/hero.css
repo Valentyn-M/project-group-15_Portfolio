@@ -6,7 +6,7 @@
 		url('/img/hero/tablet/bg-tab-down.png');
 	background-repeat: no-repeat, no-repeat;
 	background-size: 351px 264px, 169px 131px;
-	background-position: top right, right 20px bottom 105px;
+	background-position: top 16px right 20px, right 20px bottom 105px;
 	backdrop-filter: blur(6px);
 
 }
@@ -124,8 +124,8 @@
 		background-image: url('/img/hero/tablet/bg-tab-up.png'),
 			url('/img/hero/tablet/bg-tab-down.png');
 		background-repeat: no-repeat, no-repeat;
-		background-position: top right 20px,
-			right 173px bottom 60px;
+		background-position: top 16px right 32px,
+			left 216px bottom 68px;
 		backdrop-filter: blur(6px);
 		background-size: 356px 276px, 356px 276px;
 
@@ -182,8 +182,8 @@
 		background-image: url('/img/hero/pc/bg-pc-up.png'),
 			url('/img/hero/pc/bg-pc-down.png');
 		background-repeat: no-repeat, no-repeat;
-		background-position: top right 20px,
-			bottom 36px left 180px;
+		background-position: top 18px right 32px,
+			left 236px bottom 44px;
 		backdrop-filter: blur(6px);
 		background-size: 356px 276px, 356px 276px;
 
