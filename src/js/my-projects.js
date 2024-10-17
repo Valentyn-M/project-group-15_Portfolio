@@ -2,7 +2,6 @@ import iziToast from 'izitoast';
 
 import iconArrow from "../img/icons.svg";
 
-
 import imageMob from '../img/my-projects/mobile/foto-1-mob-1x.jpg';
 import imageMob2x from '../img/my-projects/mobile/foto-1-mob-2x.jpg';
 import imageTab from '../img/my-projects/pc/foto-1-pc-1x.jpg';
@@ -188,6 +187,7 @@ const projects = [
 
 let currentIndex = 0;
 const projectsPerPage = 3;
+let isLoadMoreClicked = false;
 
 
 function loadProjects() {
@@ -218,6 +218,17 @@ function loadProjects() {
 	}).join('');
 
 	projectsList.innerHTML += projectsHTML;
+	const cardHeight = projectsList.lastElementChild.getBoundingClientRect().height;
+
+
+    if (isLoadMoreClicked) {
+        window.scrollBy({
+            top: cardHeight * 0.8,
+            behavior: 'smooth',
+        });
+    }
+
+
 	currentIndex += projectsPerPage;
 
 	if (currentIndex >= projects.length) {
@@ -237,7 +248,9 @@ function loadProjects() {
 
 }
 
-document.querySelector(".load-more-btn").addEventListener("click", loadProjects);
 
-
+document.querySelector(".load-more-btn").addEventListener("click", () => {
+    isLoadMoreClicked = true;
+    loadProjects(); 
+});
 window.addEventListener("load", loadProjects);
