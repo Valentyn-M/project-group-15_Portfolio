@@ -26,6 +26,7 @@
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	transition: color 0.3s ease 0s;
+	margin-bottom: 40px;
 }
 
 .hero-subtitle {
@@ -52,7 +53,12 @@
 	width: 30px;
 	margin-right: 12px;
 }
-
+.hero-description {
+	display: flex;
+	flex-direction: column;
+	height: 272px;
+	justify-content: space-between;
+}
 .hero-reference {
 	display: flex;
 	align-items: center;
@@ -61,11 +67,9 @@
 	line-height: 156%;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	margin-bottom: 72px;
-	margin-top: 72px;
 	position: relative;
 	transition: color 0.3s ease 0s;
-	height: 100%;
+	height: 96px;
 }
 
 .hero-reference::after {
@@ -141,6 +145,7 @@
 	.hero-title {
 		font-size: 136px;
 		line-height: 115%;
+		margin-bottom: 60px;
 	}
 
 	.hero-subtitle {
@@ -148,11 +153,12 @@
 		line-height: 115%;
 		height: 312px;
 	}
-
+	.hero-description {
+		height: 232px;
+	}
 	.hero-reference {
 		font-size: 20px;
 		line-height: 160%;
-		margin-top: 92px;
 	}
 
 	.hero-reference::after {
@@ -178,7 +184,7 @@
 @media only screen and (min-width: 1280px) {
 	.hero-container {
 		max-width: 1280px;
-		padding: 184px 32px 0 32px;
+		padding: 184px 32px 132px 32px;
 		background-image: url('/img/hero/pc/bg-pc-up.png'),
 			url('/img/hero/pc/bg-pc-down.png');
 		background-repeat: no-repeat, no-repeat;
@@ -219,16 +225,16 @@
 		margin-top: 25px;
 		margin-left: 40px;
 	}
-
 	.hero-reference {
 		margin: 0 0 0 72px;
-		align-self: center;
 		width: 416px;
 	}
 	.hero-description {
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
-		margin-bottom: 132px;
+		margin-bottom: 0px;
+		height: 96px;
 	}
 
 	.hero-text {
