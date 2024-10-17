@@ -119,9 +119,7 @@ background-color: #14c57c;
 }
 
 @media screen and (min-width: 768px) {
-.my-projects {
-gap: 80px;
-}
+
 
 .my-projects-container {
 gap: 60px;
