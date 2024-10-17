@@ -14,7 +14,7 @@
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 	.hero-container {
-		background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+		background-image: url('/img/hero/pc/bg-pc-up-2x.png'), url('/img/hero/pc/bg-pc-down-2x.png');
 	}
 }
 
@@ -134,7 +134,7 @@
 	@media (-webkit-min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi) {
 		.hero-container {
-			background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+			background-image: url('/img/hero/pc/bg-pc-up-2x.png'), url('/img/hero/pc/bg-pc-down-2x.png');
 		}
 	}
 
@@ -192,7 +192,7 @@
 	@media (-webkit-min-device-pixel-ratio: 2),
 	(min-resolution: 192dpi) {
 		.hero-container {
-			background-image: url('../img/hero/pc/bg-pc-up-2x.png'), url('../img/hero/pc/bg-pc-down-2x.png');
+			background-image: url('/img/hero/pc/bg-pc-up-2x.png'), url('/img/hero/pc/bg-pc-down-2x.png');
 		}
 	}
 
@@ -203,6 +203,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		width: 1216px;
+		margin-bottom: 80px;
 	}
 
 	.hero-subtitle {
@@ -220,18 +221,18 @@
 	}
 
 	.hero-reference {
-		margin: 112px 0 164px 72px;
+		margin: 0 0 0 72px;
+		align-self: center;
+		width: 416px;
 	}
-
 	.hero-description {
 		display: flex;
 		justify-content: space-between;
-
+		margin-bottom: 132px;
 	}
 
 	.hero-text {
 		width: 592px;
-		margin-top: 80px;
 	}
 }
 
