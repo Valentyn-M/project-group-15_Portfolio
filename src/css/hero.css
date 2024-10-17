@@ -53,12 +53,14 @@
 	width: 30px;
 	margin-right: 12px;
 }
+
 .hero-description {
 	display: flex;
 	flex-direction: column;
 	height: 272px;
 	justify-content: space-between;
 }
+
 .hero-reference {
 	display: flex;
 	align-items: center;
@@ -82,7 +84,7 @@
 	position: absolute;
 	right: 0;
 	z-index: -1;
-	transition: color 0.3s ease 0s;
+	transition: background-color 0.3s ease;
 }
 
 .hero-reference:hover::after {
@@ -153,19 +155,21 @@
 		line-height: 115%;
 		height: 312px;
 	}
+
 	.hero-description {
 		height: 232px;
 	}
+
 	.hero-reference {
 		font-size: 20px;
 		line-height: 160%;
+		width: 416px;
 	}
 
 	.hero-reference::after {
 		left: 155px;
 		width: 261px;
 		height: 96px;
-		transition: color 0.3s ease 0s;
 	}
 
 	.hero-text {
@@ -225,10 +229,12 @@
 		margin-top: 25px;
 		margin-left: 40px;
 	}
+
 	.hero-reference {
 		margin: 0 0 0 72px;
 		width: 416px;
 	}
+
 	.hero-description {
 		display: flex;
 		flex-direction: row;
