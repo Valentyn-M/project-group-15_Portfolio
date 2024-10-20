@@ -53,16 +53,13 @@
 	font-size: 16px;
 	line-height: 1.5;
 	letter-spacing: 0.03em;
-}
-
-.social-list li a:hover {
-	color: #00B068;
+	outline: none;
 	transition: color 0.3s ease;
 }
 
+.social-list li a:hover,
 .social-list li a:focus {
 	color: #00B068;
-	transition: color 0.3s ease;
 }
 
 .copyright {
@@ -98,14 +95,9 @@
 	color: #f0f0f0;
 }
 
-._dark .social-list li a:hover {
-	color: #14c57c;
-	transition: color 0.3s ease;
-}
-
+._dark .social-list li a:hover,
 ._dark .social-list li a:focus {
 	color: #14c57c;
-	transition: color 0.3s ease;
 }
 
 ._dark .copyright {

@@ -7,9 +7,9 @@
 
 @font-face {
 	font-family: 'Impact';
-	src: url('./fonts/impact.woff2') format('woff2'),
-		url('./fonts/impact.woff') format('woff'),
-		url('./fonts/impact.ttf') format('truetype');
+	src: url('../fonts/impact.woff2') format('woff2'),
+		url('../fonts/impact.woff') format('woff'),
+		url('../fonts/impact.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

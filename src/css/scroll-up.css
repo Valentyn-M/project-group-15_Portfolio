@@ -1,0 +1,54 @@
+.button-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 999;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #00b068;
+	transition: all 0.3s ease;
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+@media only screen and (min-width: 1440px) {
+	.button-top {
+		bottom: 50px;
+		left: calc(50% + (1280px / 2));
+	}
+}
+
+/* Dark theme */
+html._dark .button-top {
+	background-color: #14c57c;
+}
+
+.button-top:hover,
+.button-top:focus {
+	background-color: #009156;
+}
+
+/* Dark theme */
+html._dark .button-top:hover,
+html._dark .button-top:focus {
+	background-color: #009156;
+}
+
+
+.button-top.is-active {
+	opacity: 1;
+	visibility: visible;
+	pointer-events: auto;
+}
+
+.button-top-icon {
+	fill: #f0f0f0;
+	transform: rotate(-45deg);
+}
