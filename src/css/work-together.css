@@ -135,18 +135,18 @@
 	}
 }
 
-.work-together-contacts-item {
+.work-together-contacts-link {
 	display: flex;
 	align-items: center;
 	gap: 16px;
 }
 
-.work-together-contacts-icon {
+.work-together-contacts-link-icon {
 	fill: #00b068;
 }
 
 /* Dark theme */
-html._dark .work-together-contacts-icon {
+html._dark .work-together-contacts-link-icon {
 	fill: #14c57c;
 }
 
