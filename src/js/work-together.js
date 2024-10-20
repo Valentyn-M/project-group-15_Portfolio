@@ -9,6 +9,7 @@ const iconSuccess = contactForm.querySelector(".work-together-input-success-icon
 const massageError = contactForm.querySelector(".work-together-input-error-message");
 const localStorageKey = "contact-form-state";
 const modalForm = document.querySelector(".modal-overlay");
+const bodyElement = document.body;
 
 // Object for form data
 const formData = {
@@ -82,12 +83,28 @@ textareaMessage.addEventListener("blur", function (event) {
 contactForm.addEventListener("submit", (event) => {
 	event.preventDefault();
 
-	// If email field is empty
+	// If Email field is empty
 	if (formData.email === '') {
 		return iziToast.warning({
 			class: "izitoast-warning",
 			titleSize: "16px",
 			message: "Please enter your email",
+			messageSize: "16px",
+			close: true,
+			closeOnEscape: true,
+			position: "topRight",
+			timeout: 4000,
+			animateInside: false,
+			transitionIn: "bounceInLeft",
+		});
+	}
+
+	// If Message field is empty
+	if (formData.message === '') {
+		return iziToast.warning({
+			class: "izitoast-warning",
+			titleSize: "16px",
+			message: "Please enter your message",
 			messageSize: "16px",
 			close: true,
 			closeOnEscape: true,
@@ -112,6 +129,7 @@ contactForm.addEventListener("submit", (event) => {
 			modalForm.querySelector('.modal-form-title').textContent = `${data.title}`;
 			modalForm.querySelector('.modal-form-text').textContent = `${data.message}`;
 			modalForm.classList.add("is-active");
+			bodyElement.classList.add("is-locked");
 			closeModal();
 			// Clear LocalStorage, Object with form data, Form
 			iconSuccess.classList.remove("is-active");
@@ -162,11 +180,13 @@ function closeModal() {
 
 		if (targetElement.closest(".modal-overlay")) {
 			modalForm.classList.remove("is-active");
+			bodyElement.classList.remove("is-locked");
 			modalForm.removeEventListener("click", modalActions);
 		}
 
 		if (targetElement.closest(".modal-form-close-icon")) {
 			modalForm.classList.remove("is-active");
+			bodyElement.classList.remove("is-locked");
 			modalForm.removeEventListener("click", modalActions);
 		}
 	}
@@ -176,6 +196,7 @@ function closeModal() {
 	function keyActions(event) {
 		if (event.code === "Escape") {
 			modalForm.classList.remove("is-active");
+			bodyElement.classList.remove("is-locked");
 			document.removeEventListener("keyup", keyActions);
 		}
 	}
@@ -186,7 +207,7 @@ function closeModal() {
 async function sendData(email, message) {
 	const formData = {
 		email: email,
-		comment: message || "Message is empty"
+		comment: message
 	};
 
 	const response = await axios.post(`${BASE_URL}requests`, formData);
