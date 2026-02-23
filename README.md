@@ -11,14 +11,17 @@ Portfolio is a responsive team-built portfolio website with a modern adaptive la
 - Responsive layout for mobile/tablet/desktop
 - Dark/light theme with OS preference detection
 - Manual theme toggle with persisted user choice
-- “Benefits” section (UI + layout)
-- “Let’s work together” section (UI + interactions)
+- Smooth navigation across page sections (typical portfolio structure)
+- Interactive UI components (accordions/sections, sliders, etc.)
 - REST integration via Axios (HTTP POST)
 
 ## Technologies Used
 - HTML5
 - SCSS
 - JavaScript
+- Swiper
+- iziToast
+- accordion-js
 - Vite
 - Axios
 - REST API (HTTP POST)
